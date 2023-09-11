@@ -1,0 +1,21 @@
+,
+        {
+            "type": "resources",
+            "modifyerIcon": "gears",
+            "nameID": "auto_place_ships",
+            "displayName": "Auto Merge Ship",
+            "attributeDescription": "",
+            "imageSrc": "drill",
+            "tileImageSrc": "gears",
+            "initialCost": 10000000000000000000000,
+            "costCoefficient": 1,
+            "initialTime": 1,
+            "initialRevenue": 1,
+            "coefficientProductivity": 1,
+            "initialProductivity": 1,
+            "modifyer":"autoMerge",
+            "levelMax": 2,
+            "quantify":true,
+            "quantifyBoolean":true,
+            "quantifyMessage":"Total"
+        }
