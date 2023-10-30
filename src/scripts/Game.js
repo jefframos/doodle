@@ -81,7 +81,7 @@ export default class Game {
         this.fillLoader.y = 150
 
 
-        this.logo = new PIXI.Sprite.from('main-logo.png')
+        this.logo = new PIXI.Sprite()
         this.logo.x = 150
         this.logo.y = 0
         this.logo.anchor.set(0.5)

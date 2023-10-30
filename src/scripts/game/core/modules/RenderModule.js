@@ -53,7 +53,7 @@ export default class RenderModule extends GameObject {
         this.renderStats = {
             totalRenderEntities: 0
         }
-        window.gameplayFolder.add(this.renderStats, 'totalRenderEntities').listen();
+        //window.gameplayFolder.add(this.renderStats, 'totalRenderEntities').listen();
 
         this.onNewRenderEntityAdded = new signals.Signal();
         this.onNewRenderEntityLateAdded = new signals.Signal();

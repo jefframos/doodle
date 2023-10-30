@@ -26,7 +26,7 @@ export default class PhysicsModule extends GameObject {
         this.physicsStats = {
             totalPhysicsEntities: 0
         }
-        window.gameplayFolder.add(this.physicsStats, 'totalPhysicsEntities').listen();
+        //window.gameplayFolder.add(this.physicsStats, 'totalPhysicsEntities').listen();
 
         Matter.Events.on(this.physicsEngine, 'collisionActive ', (event) => {
             event.pairs.forEach((collision) => {

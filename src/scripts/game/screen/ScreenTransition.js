@@ -39,11 +39,7 @@ export default class ScreenTransition extends PIXI.Container {
             this.container.addChild(stripe)
         }
 
-        this.logo = new PIXI.Sprite.from('main-logo')
-        this.addChild(this.logo)
-        this.logo.anchor.set(0.5)
-
-
+        
         this.direction = 1
     }
 
@@ -101,17 +97,8 @@ export default class ScreenTransition extends PIXI.Container {
         if ((this.direction > 0 && nTime > 0.05) || (this.direction < 0 && nTime > 0.1)) {
             this.blocker.visible = true;
             const targetScaleX = 1 / this.scale.x
-            const targetScaleY = 1 / this.scale.y
-            if (this.direction > 0) {
-
-                this.logo.scale.x = Utils.easeOutElastic(nTime) * targetScaleX
-                this.logo.scale.y = (1.5 * targetScaleY) - Utils.easeOutElastic(nTime) * (0.5 * targetScaleY)
-            } else {
-                this.logo.scale.y = Utils.easeOutBack(nTime) * targetScaleY
-                this.logo.scale.x = (1.5 * targetScaleX) - Utils.easeOutElastic(nTime) * (0.5 * targetScaleX)
-            }
+            const targetScaleY = 1 / this.scale.y           
         } else {
-            this.logo.scale.set(0)
             this.blocker.visible = false;
         }
     }
@@ -122,7 +109,5 @@ export default class ScreenTransition extends PIXI.Container {
         this.scale.x = Game.Borders.width / this.baseRect.width
         this.scale.y = Game.Borders.height / this.baseRect.height
 
-        this.logo.scale.x = 1 / this.scale.x
-        this.logo.scale.y = 1 / this.scale.y
     }
 }
