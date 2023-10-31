@@ -6,6 +6,7 @@ import Vector3 from "../core/gameObject/Vector3";
 import RenderModule from "../core/modules/RenderModule";
 import Pool from "../core/utils/Pool";
 import Creature from "../entities/animation/Creature";
+import Head from "../entities/animation/Head";
 import EffectsManager from "../manager/EffectsManager";
 import MainScreenManager from "./MainScreenManager";
 
@@ -42,11 +43,16 @@ export default class ArenaScreen extends Screen {
         this.gameEngine.start();
         //this.worldRender = this.gameEngine.addGameObject(new EnvironmentManager());
 
-        let entity = this.gameEngine.poolGameObject(Creature, true)
-        entity.x = 50
+        let entity = this.gameEngine.poolGameObject(Head, true)
 
-        let entity2 = this.gameEngine.poolGameObject(Creature, true)
-        entity2.x = -50
+        // for (let index = 0; index < 150; index++) {
+        //     const ang = Math.random() * 3.14 * 2
+        //     const dist = Math.random() * 1200
+        //     let entity = this.gameEngine.poolGameObject(Creature, true)
+        //     entity.x = Math.cos(ang) *dist
+        //     entity.z = Math.sin(ang) *dist
+    
+        // }
     }
     update(delta) {
         const timeScale = 1.25
