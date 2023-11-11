@@ -76389,7 +76389,7 @@ module.exports = exports["default"];
 
 
 Object.defineProperty(exports, "__esModule", {
-        value: true
+    value: true
 });
 
 var _getPrototypeOf = __webpack_require__(2);
@@ -76451,99 +76451,167 @@ var _StaticPhysicObject2 = _interopRequireDefault(_StaticPhysicObject);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var BaseMap = function (_GameObject) {
-        (0, _inherits3.default)(BaseMap, _GameObject);
+    (0, _inherits3.default)(BaseMap, _GameObject);
 
-        function BaseMap() {
-                (0, _classCallCheck3.default)(this, BaseMap);
+    function BaseMap() {
+        (0, _classCallCheck3.default)(this, BaseMap);
 
-                var _this = (0, _possibleConstructorReturn3.default)(this, (BaseMap.__proto__ || (0, _getPrototypeOf2.default)(BaseMap)).call(this));
+        var _this = (0, _possibleConstructorReturn3.default)(this, (BaseMap.__proto__ || (0, _getPrototypeOf2.default)(BaseMap)).call(this));
 
-                _this.onMapUp = new _signals2.default.Signal();
+        _this.onMapUp = new _signals2.default.Signal();
 
-                _this.gameView = new _WorldGameView2.default(_this);
+        _this.gameView = new _WorldGameView2.default(_this);
 
-                _this.gameView.view = new PIXI.Container();
-                _this.gameView.layer = _RenderModule2.default.RenderLayers.Floor;
+        _this.gameView.view = new PIXI.Container();
+        _this.gameView.layer = _RenderModule2.default.RenderLayers.Floor;
 
-                _this.floorTexture = new PIXI.TilingSprite(PIXI.Texture.from('grass-patch-1'), 256, 256);
-                _this.gameView.view.addChild(_this.floorTexture);
+        _this.floorTexture = new PIXI.TilingSprite(PIXI.Texture.from('grass-patch-1'), 256, 256);
+        _this.gameView.view.addChild(_this.floorTexture);
 
-                _this.dimensions = {
-                        width: 1000,
-                        height: 600
+        _this.dimensions = {
+            width: 1000,
+            height: 600
+        };
+
+        _this.team1Towers = [];
+        _this.team2Towers = [];
+
+        _this.team1Tower = _this.addChild(Eugine.poolGameObject(_BaseTower2.default, true));
+        _this.team1Towers.push(_this.team1Tower);
+
+        _this.team2Tower = _this.addChild(Eugine.poolGameObject(_BaseTower2.default, true));
+        _this.team2Towers.push(_this.team2Tower);
+
+        _this.dropZone = new PIXI.Sprite.from('tile');
+        _this.gameView.view.addChild(_this.dropZone);
+        _this.dropZone.alpha = 0.01;
+
+        _this.aspectBuild = '';
+
+        _InteractableView2.default.addMouseUp(_this.dropZone, function (e) {
+            _this.onMapUp.dispatch(e.data.global);
+        });
+        return _this;
+    }
+
+    (0, _createClass3.default)(BaseMap, [{
+        key: "start",
+        value: function start() {
+
+            this.ladscapeEnvironment = [];
+            this.updateView();
+            this.buildBounds();
+        }
+    }, {
+        key: "buildBounds",
+        value: function buildBounds() {
+
+            if (_Game2.default.IsPortrait) {
+                if (this.aspectBuild == 'portrait') {
+                    return;
+                }
+                this.aspectBuild = 'portrait';
+
+                this.ladscapeEnvironment.forEach(function (element) {
+                    element.destroy();
+                });
+                this.ladscapeEnvironment = [];
+
+                var top = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                top.build({ x: this.dimensions.width / 2, y: 0, width: this.dimensions.width, height: 40, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                this.ladscapeEnvironment.push(top);
+
+                var bottom = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                bottom.build({ x: this.dimensions.width / 2, y: this.dimensions.height, width: this.dimensions.width, height: 40, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                this.ladscapeEnvironment.push(bottom);
+
+                var left = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                left.build({ x: 0, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                this.ladscapeEnvironment.push(left);
+
+                var right = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                right.build({ x: this.dimensions.width, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                this.ladscapeEnvironment.push(right);
+            } else {
+                if (this.aspectBuild == 'landscape') {
+                    return;
+                }
+                this.aspectBuild = 'landscape';
+
+                this.ladscapeEnvironment.forEach(function (element) {
+                    element.destroy();
+                });
+                this.ladscapeEnvironment = [];
+
+                var _top = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                _top.build({ x: this.dimensions.width / 2, y: 0, width: this.dimensions.width, height: 40, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                this.ladscapeEnvironment.push(_top);
+
+                var _bottom = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                _bottom.build({ x: this.dimensions.width / 2, y: this.dimensions.height, width: this.dimensions.width, height: 40, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                this.ladscapeEnvironment.push(_bottom);
+
+                var _left = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                _left.build({ x: 0, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                this.ladscapeEnvironment.push(_left);
+
+                var _right = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                _right.build({ x: this.dimensions.width, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                this.ladscapeEnvironment.push(_right);
+            }
+        }
+    }, {
+        key: "resize",
+        value: function resize(resolution, innerResolution) {
+
+            this.updateView();
+            this.buildBounds();
+        }
+    }, {
+        key: "updateView",
+        value: function updateView() {
+
+            if (_Game2.default.IsPortrait) {
+
+                this.dimensions = {
+                    width: 600,
+                    height: 1000
+                };
+                this.dropZone.width = this.dimensions.width;
+                this.dropZone.height = this.dimensions.height / 2;
+                this.dropZone.y = this.dimensions.height / 2;
+
+                this.team2Tower.x = this.dimensions.width / 2;
+                this.team2Tower.z = 50;
+
+                this.team1Tower.x = this.dimensions.width / 2;
+                this.team1Tower.z = this.dimensions.height - 50;
+            } else {
+
+                this.dimensions = {
+                    width: 1000,
+                    height: 600
                 };
 
-                _this.team1Tower = _this.addChild(Eugine.poolGameObject(_BaseTower2.default, true));
+                this.dropZone.y = 0;
 
-                _this.team2Tower = _this.addChild(Eugine.poolGameObject(_BaseTower2.default, true));
-                _this.team2Tower.z = _this.dimensions.height / 2;
+                this.dropZone.width = this.dimensions.width / 2;
+                this.dropZone.height = this.dimensions.height;
 
-                _this.test = _this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
-                _this.test.build({ x: 270, y: 500, width: 150, height: 200, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                this.team1Tower.x = 50;
+                this.team1Tower.z = this.dimensions.height / 2;
 
-                _this.dropZone = new PIXI.Sprite.from('tile');
-                _this.gameView.view.addChild(_this.dropZone);
-                _this.dropZone.alpha = 0.01;
+                this.team2Tower.x = this.dimensions.width - 50;
+                this.team2Tower.z = this.dimensions.height / 2;
+            }
 
-                _this.updateView();
+            this.floorTexture.width = this.dimensions.width;
+            this.floorTexture.height = this.dimensions.height;
 
-                _InteractableView2.default.addMouseUp(_this.dropZone, function (e) {
-                        _this.onMapUp.dispatch(e.data.global);
-                });
-                return _this;
+            this.mapCenter = new _Vector2.default(this.floorTexture.width / 2, 0, this.floorTexture.height / 2);
         }
-
-        (0, _createClass3.default)(BaseMap, [{
-                key: "resize",
-                value: function resize(resolution, innerResolution) {
-
-                        this.updateView();
-                }
-        }, {
-                key: "updateView",
-                value: function updateView() {
-
-                        if (_Game2.default.IsPortrait) {
-
-                                this.dimensions = {
-                                        width: 600,
-                                        height: 1000
-                                };
-                                this.dropZone.width = this.dimensions.width;
-                                this.dropZone.height = this.dimensions.height / 2;
-                                this.dropZone.y = this.dimensions.height / 2;
-
-                                this.team2Tower.x = this.dimensions.width / 2;
-                                this.team2Tower.z = 50;
-
-                                this.team1Tower.x = this.dimensions.width / 2;
-                                this.team1Tower.z = this.dimensions.height - 50;
-                        } else {
-
-                                this.dimensions = {
-                                        width: 1000,
-                                        height: 600
-                                };
-
-                                this.dropZone.y = 0;
-
-                                this.dropZone.width = this.dimensions.width / 2;
-                                this.dropZone.height = this.dimensions.height;
-
-                                this.team1Tower.x = 50;
-                                this.team1Tower.z = this.dimensions.height / 2;
-
-                                this.team2Tower.x = this.dimensions.width - 50;
-                                this.team2Tower.z = this.dimensions.height / 2;
-                        }
-
-                        this.floorTexture.width = this.dimensions.width;
-                        this.floorTexture.height = this.dimensions.height;
-
-                        this.mapCenter = new _Vector2.default(this.floorTexture.width / 2, 0, this.floorTexture.height / 2);
-                }
-        }]);
-        return BaseMap;
+    }]);
+    return BaseMap;
 }(_GameObject3.default);
 
 exports.default = BaseMap;
@@ -76752,14 +76820,13 @@ function loadManifests() {
         PokiSDK.gameLoadingStart();
     }
 
-    _manifest2.default['default'].push('image/pokes.json');
-    console.log(_manifest2.default);
     for (var i = _manifest2.default['default'].length - 1; i >= 0; i--) {
         var dest = 'assets/' + _manifest2.default['default'][i];
 
         jsons.push(dest);
         _Game2.default.MainLoader.add(dest);
     }
+    _Game2.default.MainLoader.add('pokes.json');
     _Game2.default.MainLoader.load(afterLoadManifests);
 }
 //PokiSDK.setDebug(true);
@@ -104044,7 +104111,7 @@ module.exports = exports['default'];
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+        value: true
 });
 
 var _getPrototypeOf = __webpack_require__(2);
@@ -104130,103 +104197,105 @@ var _MainScreenManager2 = _interopRequireDefault(_MainScreenManager);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ArenaScreen = function (_Screen) {
-    (0, _inherits3.default)(ArenaScreen, _Screen);
+        (0, _inherits3.default)(ArenaScreen, _Screen);
 
-    function ArenaScreen(label, targetContainer) {
-        (0, _classCallCheck3.default)(this, ArenaScreen);
+        function ArenaScreen(label, targetContainer) {
+                (0, _classCallCheck3.default)(this, ArenaScreen);
 
-        var _this = (0, _possibleConstructorReturn3.default)(this, (ArenaScreen.__proto__ || (0, _getPrototypeOf2.default)(ArenaScreen)).call(this, label, targetContainer));
+                var _this = (0, _possibleConstructorReturn3.default)(this, (ArenaScreen.__proto__ || (0, _getPrototypeOf2.default)(ArenaScreen)).call(this, label, targetContainer));
 
-        _this.container = new PIXI.Container();
-        _this.addChild(_this.container);
+                _this.container = new PIXI.Container();
+                _this.addChild(_this.container);
 
-        _this.gameplayContainer = new PIXI.Container();
-        _this.effectsContainer = new PIXI.Container();
-        _this.uiContainer = new PIXI.Container();
+                _this.gameplayContainer = new PIXI.Container();
+                _this.effectsContainer = new PIXI.Container();
+                _this.uiContainer = new PIXI.Container();
 
-        _this.container.addChild(_this.gameplayContainer);
-        _this.container.addChild(_this.effectsContainer);
-        _this.container.addChild(_this.uiContainer);
+                _this.container.addChild(_this.gameplayContainer);
+                _this.container.addChild(_this.effectsContainer);
+                _this.container.addChild(_this.uiContainer);
 
-        _this.gameEngine = new _Eugine2.default();
+                _this.gameEngine = new _Eugine2.default();
 
-        _this.physics = _this.gameEngine.physics;
-        _this.renderModule = _this.gameEngine.addGameObject(new _RenderModule2.default(_this.gameplayContainer, _this.uiContainer, _Game2.default.GameplayUIOverlayContainer));
-        //this.inputModule = this.gameEngine.addGameObject(new InputModule(this))
-        _this.effectsManager = _this.gameEngine.addGameObject(new _EffectsManager2.default(_this.effectsContainer, _this.gameplayContainer));
-        _this.camera = _this.gameEngine.addCamera(new _PerspectiveCamera2.default());
+                _this.physics = _this.gameEngine.physics;
+                _this.renderModule = _this.gameEngine.addGameObject(new _RenderModule2.default(_this.gameplayContainer, _this.uiContainer, _Game2.default.GameplayUIOverlayContainer));
+                //this.inputModule = this.gameEngine.addGameObject(new InputModule(this))
+                _this.effectsManager = _this.gameEngine.addGameObject(new _EffectsManager2.default(_this.effectsContainer, _this.gameplayContainer));
+                _this.camera = _this.gameEngine.addCamera(new _PerspectiveCamera2.default());
 
-        _this.camera.setFollowPoint(new _Vector2.default());
+                _this.camera.setFollowPoint(new _Vector2.default());
 
-        return _this;
-    }
-
-    (0, _createClass3.default)(ArenaScreen, [{
-        key: "build",
-        value: function build(param) {
-            var _this2 = this;
-
-            (0, _get3.default)(ArenaScreen.prototype.__proto__ || (0, _getPrototypeOf2.default)(ArenaScreen.prototype), "build", this).call(this);
-            this.gameEngine.start();
-            //this.worldRender = this.gameEngine.addGameObject(new EnvironmentManager());
-            this.map = this.gameEngine.poolGameObject(_BaseMap2.default, true);
-
-            this.map.onMapUp.add(function (position) {
-                var entity = _this2.gameEngine.poolGameObject(_BaseUnit2.default, true);
-
-                var local = _this2.gameplayContainer.toLocal(position);
-                entity.x = local.x;
-                entity.z = local.y;
-            });
-
-            this.camera.setFollowPoint(this.map.mapCenter);
+                return _this;
         }
-    }, {
-        key: "update",
-        value: function update(delta) {
-            var timeScale = 1.25;
 
-            if (this.map) {
-                var zoom = _Utils2.default.scaleToFitDimensions(this.map.dimensions, _Game2.default.Borders);
-                this.camera.targetZoom = zoom;
-            }
+        (0, _createClass3.default)(ArenaScreen, [{
+                key: "build",
+                value: function build(param) {
+                        var _this2 = this;
 
-            var debugTimeScale = _Game2.default.Debug.timeScale | 1;
-            var scaledTime = delta * debugTimeScale * timeScale;
-            delta *= debugTimeScale;
-            this.gameEngine.update(scaledTime, delta * debugTimeScale);
-        }
-    }, {
-        key: "transitionOut",
-        value: function transitionOut(nextScreen, params) {
-            this.removeEvents();
-            this.nextScreen = nextScreen;
-            (0, _get3.default)(ArenaScreen.prototype.__proto__ || (0, _getPrototypeOf2.default)(ArenaScreen.prototype), "transitionOut", this).call(this, nextScreen, params, _MainScreenManager2.default.Transition.timeOut);
-        }
-    }, {
-        key: "transitionIn",
-        value: function transitionIn(param) {
-            var _this3 = this;
+                        (0, _get3.default)(ArenaScreen.prototype.__proto__ || (0, _getPrototypeOf2.default)(ArenaScreen.prototype), "build", this).call(this);
+                        this.gameEngine.start();
+                        //this.worldRender = this.gameEngine.addGameObject(new EnvironmentManager());
+                        this.map = this.gameEngine.poolGameObject(_BaseMap2.default, true);
 
-            setTimeout(function () {
-                (0, _get3.default)(ArenaScreen.prototype.__proto__ || (0, _getPrototypeOf2.default)(ArenaScreen.prototype), "transitionIn", _this3).call(_this3, param);
-            }, _MainScreenManager2.default.Transition.timeIn);
-        }
-    }, {
-        key: "aspectChange",
-        value: function aspectChange(isPortrait) {
+                        this.map.onMapUp.add(function (position) {
+                                var entity = _this2.gameEngine.poolGameObject(_BaseUnit2.default, true);
 
-            this.gameEngine.aspectChange(isPortrait);
-        }
-    }, {
-        key: "resize",
-        value: function resize(resolution, innerResolution) {
-            this.container.x = config.width / 2;
-            this.container.y = config.height / 2;
-            this.gameEngine.resize(resolution, innerResolution);
-        }
-    }]);
-    return ArenaScreen;
+                                var local = _this2.gameplayContainer.toLocal(position);
+                                entity.x = local.x;
+                                entity.z = local.y;
+                        });
+
+                        this.camera.setFollowPoint(this.map.mapCenter);
+                }
+        }, {
+                key: "update",
+                value: function update(delta) {
+                        var timeScale = 1.25;
+
+                        if (this.map) {
+                                var zoom = _Utils2.default.scaleToFitDimensions(this.map.dimensions, _Game2.default.Borders);
+                                this.camera.targetZoom = zoom;
+
+                                this.camera.setFollowPoint(this.map.mapCenter);
+                        }
+
+                        var debugTimeScale = _Game2.default.Debug.timeScale | 1;
+                        var scaledTime = delta * debugTimeScale * timeScale;
+                        delta *= debugTimeScale;
+                        this.gameEngine.update(scaledTime, delta * debugTimeScale);
+                }
+        }, {
+                key: "transitionOut",
+                value: function transitionOut(nextScreen, params) {
+                        this.removeEvents();
+                        this.nextScreen = nextScreen;
+                        (0, _get3.default)(ArenaScreen.prototype.__proto__ || (0, _getPrototypeOf2.default)(ArenaScreen.prototype), "transitionOut", this).call(this, nextScreen, params, _MainScreenManager2.default.Transition.timeOut);
+                }
+        }, {
+                key: "transitionIn",
+                value: function transitionIn(param) {
+                        var _this3 = this;
+
+                        setTimeout(function () {
+                                (0, _get3.default)(ArenaScreen.prototype.__proto__ || (0, _getPrototypeOf2.default)(ArenaScreen.prototype), "transitionIn", _this3).call(_this3, param);
+                        }, _MainScreenManager2.default.Transition.timeIn);
+                }
+        }, {
+                key: "aspectChange",
+                value: function aspectChange(isPortrait) {
+
+                        this.gameEngine.aspectChange(isPortrait);
+                }
+        }, {
+                key: "resize",
+                value: function resize(resolution, innerResolution) {
+                        this.container.x = config.width / 2;
+                        this.container.y = config.height / 2;
+                        this.gameEngine.resize(resolution, innerResolution);
+                }
+        }]);
+        return ArenaScreen;
 }(_Screen3.default);
 
 exports.default = ArenaScreen;
@@ -104340,7 +104409,7 @@ var PerspectiveCamera = function (_Camera) {
                 this.renderModule.container.pivot.x = _utils2.default.lerp(this.renderModule.container.pivot.x, this.followPoint.x, 0.1);
                 this.renderModule.container.pivot.y = _utils2.default.lerp(this.renderModule.container.pivot.y, this.followPoint.z, 0.1);
 
-                _Camera3.default.Zoom = _utils2.default.lerp(_Camera3.default.Zoom, this.targetZoom, 0.01 * delta * 60);
+                _Camera3.default.Zoom = _utils2.default.lerp(_Camera3.default.Zoom, this.targetZoom, 0.1 * delta * 60);
 
                 this.renderModule.container.scale.set(_Camera3.default.Zoom);
             }
@@ -104654,6 +104723,10 @@ var _GameStaticData = __webpack_require__(15);
 
 var _GameStaticData2 = _interopRequireDefault(_GameStaticData);
 
+var _UIUtils = __webpack_require__(9);
+
+var _UIUtils2 = _interopRequireDefault(_UIUtils);
+
 var _BaseMap = __webpack_require__(184);
 
 var _BaseMap2 = _interopRequireDefault(_BaseMap);
@@ -104675,7 +104748,7 @@ var BaseUnit = function (_PhysicsEntity) {
         //this.gameView.view.scale.set(0.5)
         _this.gameView.layer = _RenderModule2.default.RenderLayers.Gameplay;
 
-        _this.nameLabel = new PIXI.Text();
+        _this.nameLabel = _UIUtils2.default.getPrimaryLabel();
         _this.gameView.view.addChild(_this.nameLabel);
 
         _this.sin = Math.random();
@@ -104711,6 +104784,8 @@ var BaseUnit = function (_PhysicsEntity) {
             this.speed = parseInt(stats.speed) / 256;
 
             this.nameLabel.anchor.x = 0.5;
+            this.nameLabel.style.fontSize = 14;
+            this.nameLabel.scale.set(0.75);
             this.nameLabel.text = data.attribute.name;
 
             var animationFrames = {
@@ -108986,6 +109061,9 @@ var assets = [{
 	"id": "Cartoon-Mouth-Sound-20",
 	"url": "assets/audio\\Cartoon-Mouth-Sound-20.mp3"
 }, {
+	"id": "FloatingCities",
+	"url": "assets/audio\\FloatingCities.mp3"
+}, {
 	"id": "getstar",
 	"url": "assets/audio\\getstar.mp3"
 }, {
@@ -108998,14 +109076,8 @@ var assets = [{
 	"id": "item",
 	"url": "assets/audio\\item.mp3"
 }, {
-	"id": "FloatingCities",
-	"url": "assets/audio\\FloatingCities.mp3"
-}, {
 	"id": "magic",
 	"url": "assets/audio\\magic.mp3"
-}, {
-	"id": "kill",
-	"url": "assets/audio\\kill.mp3"
 }, {
 	"id": "Musical-Beep-Loop-02",
 	"url": "assets/audio\\Musical-Beep-Loop-02.mp3"
@@ -109013,14 +109085,17 @@ var assets = [{
 	"id": "Ping-Slide-Down",
 	"url": "assets/audio\\Ping-Slide-Down.mp3"
 }, {
-	"id": "place",
-	"url": "assets/audio\\place.mp3"
+	"id": "kill",
+	"url": "assets/audio\\kill.mp3"
+}, {
+	"id": "Pop-Low-Pitch-Up-02",
+	"url": "assets/audio\\Pop-Low-Pitch-Up-02.mp3"
 }, {
 	"id": "Pop-Musical",
 	"url": "assets/audio\\Pop-Musical.mp3"
 }, {
-	"id": "Pop-Low-Pitch-Up-02",
-	"url": "assets/audio\\Pop-Low-Pitch-Up-02.mp3"
+	"id": "place",
+	"url": "assets/audio\\place.mp3"
 }, {
 	"id": "Pop-Tone",
 	"url": "assets/audio\\Pop-Tone.mp3"
@@ -109040,11 +109115,11 @@ var assets = [{
 	"id": "slot-machine",
 	"url": "assets/audio\\slot-machine.mp3"
 }, {
-	"id": "Synth-Appear-01",
-	"url": "assets/audio\\Synth-Appear-01.mp3"
-}, {
 	"id": "Tap-01",
 	"url": "assets/audio\\Tap-01.mp3"
+}, {
+	"id": "Synth-Appear-01",
+	"url": "assets/audio\\Synth-Appear-01.mp3"
 }, {
 	"id": "teleport",
 	"url": "assets/audio\\teleport.mp3"
@@ -109254,15 +109329,6 @@ var assets = [{
 	"id": "game-shop",
 	"url": "assets/json\\economy\\game-shop.json"
 }, {
-	"id": "enemy-wave-01",
-	"url": "assets/json\\enemy-waves\\enemy-wave-01.json"
-}, {
-	"id": "waves2",
-	"url": "assets/json\\enemy-waves\\waves2.json"
-}, {
-	"id": "wavesBkp",
-	"url": "assets/json\\enemy-waves\\wavesBkp.json"
-}, {
 	"id": "companions",
 	"url": "assets/json\\entity\\companions.json"
 }, {
@@ -109272,6 +109338,15 @@ var assets = [{
 	"id": "player",
 	"url": "assets/json\\entity\\player.json"
 }, {
+	"id": "enemy-wave-01",
+	"url": "assets/json\\enemy-waves\\enemy-wave-01.json"
+}, {
+	"id": "waves2",
+	"url": "assets/json\\enemy-waves\\waves2.json"
+}, {
+	"id": "wavesBkp",
+	"url": "assets/json\\enemy-waves\\wavesBkp.json"
+}, {
 	"id": "level-1",
 	"url": "assets/json\\environment\\level-1.json"
 }, {
@@ -109280,6 +109355,27 @@ var assets = [{
 }, {
 	"id": "level-3",
 	"url": "assets/json\\environment\\level-3.json"
+}, {
+	"id": "acessories",
+	"url": "assets/json\\misc\\acessories.json"
+}, {
+	"id": "attachments",
+	"url": "assets/json\\misc\\attachments.json"
+}, {
+	"id": "buff-debuff",
+	"url": "assets/json\\misc\\buff-debuff.json"
+}, {
+	"id": "attribute-modifiers",
+	"url": "assets/json\\misc\\attribute-modifiers.json"
+}, {
+	"id": "main-weapons",
+	"url": "assets/json\\weapons\\main-weapons.json"
+}, {
+	"id": "weapon-in-game-visuals",
+	"url": "assets/json\\weapons\\weapon-in-game-visuals.json"
+}, {
+	"id": "weapon-view-overriders",
+	"url": "assets/json\\weapons\\weapon-view-overriders.json"
 }, {
 	"id": "general-vfx",
 	"url": "assets/json\\vfx\\general-vfx.json"
@@ -109295,27 +109391,6 @@ var assets = [{
 }, {
 	"id": "weapon-vfx",
 	"url": "assets/json\\vfx\\weapon-vfx.json"
-}, {
-	"id": "main-weapons",
-	"url": "assets/json\\weapons\\main-weapons.json"
-}, {
-	"id": "weapon-in-game-visuals",
-	"url": "assets/json\\weapons\\weapon-in-game-visuals.json"
-}, {
-	"id": "weapon-view-overriders",
-	"url": "assets/json\\weapons\\weapon-view-overriders.json"
-}, {
-	"id": "attachments",
-	"url": "assets/json\\misc\\attachments.json"
-}, {
-	"id": "acessories",
-	"url": "assets/json\\misc\\acessories.json"
-}, {
-	"id": "attribute-modifiers",
-	"url": "assets/json\\misc\\attribute-modifiers.json"
-}, {
-	"id": "buff-debuff",
-	"url": "assets/json\\misc\\buff-debuff.json"
 }];
 
 exports.default = assets;

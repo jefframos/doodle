@@ -28,32 +28,101 @@ export default class BaseMap extends GameObject {
             width: 1000,
             height: 600
         }
-        
+
+        this.team1Towers = [];
+        this.team2Towers = [];
+
         this.team1Tower = this.addChild(Eugine.poolGameObject(BaseTower, true));
+        this.team1Towers.push(this.team1Tower)
+
 
         this.team2Tower = this.addChild(Eugine.poolGameObject(BaseTower, true));
-        this.team2Tower.z = this.dimensions.height / 2
+        this.team2Towers.push(this.team2Tower)
 
-        this.test = this.addChild(Eugine.poolGameObject(StaticPhysicObject, false));
-        this.test.build({x:270,y:500, width:150,height:200, layer:RenderModule.RenderLayers.Gameplay})
-        
+
+
+
+
         this.dropZone = new PIXI.Sprite.from('tile')
         this.gameView.view.addChild(this.dropZone);
         this.dropZone.alpha = 0.01;
 
-        this.updateView();
+        this.aspectBuild = ''
 
         InteractableView.addMouseUp(this.dropZone, (e) => {
             this.onMapUp.dispatch(e.data.global)
         })
     }
+    start() {
+
+        this.ladscapeEnvironment = [];
+        this.updateView();
+        this.buildBounds();
+    }
+    buildBounds() {
+
+        if (Game.IsPortrait) {
+            if (this.aspectBuild == 'portrait') {
+                return;
+            }
+            this.aspectBuild = 'portrait'
+
+            this.ladscapeEnvironment.forEach(element => {
+                element.destroy();
+            });
+            this.ladscapeEnvironment = [];
+
+            const top = this.addChild(Eugine.poolGameObject(StaticPhysicObject, false));
+            top.build({ x: this.dimensions.width / 2, y: 0, width: this.dimensions.width, height: 40, layer: RenderModule.RenderLayers.Gameplay })
+            this.ladscapeEnvironment.push(top)
+
+            const bottom = this.addChild(Eugine.poolGameObject(StaticPhysicObject, false));
+            bottom.build({ x: this.dimensions.width / 2, y: this.dimensions.height, width: this.dimensions.width, height: 40, layer: RenderModule.RenderLayers.Gameplay })
+            this.ladscapeEnvironment.push(bottom)
+
+            const left = this.addChild(Eugine.poolGameObject(StaticPhysicObject, false));
+            left.build({ x: 0, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: RenderModule.RenderLayers.Gameplay })
+            this.ladscapeEnvironment.push(left)
+
+            const right = this.addChild(Eugine.poolGameObject(StaticPhysicObject, false));
+            right.build({ x: this.dimensions.width, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: RenderModule.RenderLayers.Gameplay })
+            this.ladscapeEnvironment.push(right)
+        } else {
+            if (this.aspectBuild == 'landscape') {
+                return;
+            }
+            this.aspectBuild = 'landscape'
+
+            this.ladscapeEnvironment.forEach(element => {
+                element.destroy();
+            });
+            this.ladscapeEnvironment = [];
+
+            const top = this.addChild(Eugine.poolGameObject(StaticPhysicObject, false));
+            top.build({ x: this.dimensions.width / 2, y: 0, width: this.dimensions.width, height: 40, layer: RenderModule.RenderLayers.Gameplay })
+            this.ladscapeEnvironment.push(top)
+
+            const bottom = this.addChild(Eugine.poolGameObject(StaticPhysicObject, false));
+            bottom.build({ x: this.dimensions.width / 2, y: this.dimensions.height, width: this.dimensions.width, height: 40, layer: RenderModule.RenderLayers.Gameplay })
+            this.ladscapeEnvironment.push(bottom)
+
+            const left = this.addChild(Eugine.poolGameObject(StaticPhysicObject, false));
+            left.build({ x: 0, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: RenderModule.RenderLayers.Gameplay })
+            this.ladscapeEnvironment.push(left)
+
+            const right = this.addChild(Eugine.poolGameObject(StaticPhysicObject, false));
+            right.build({ x: this.dimensions.width, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: RenderModule.RenderLayers.Gameplay })
+            this.ladscapeEnvironment.push(right)
+        }
+    }
     resize(resolution, innerResolution) {
 
         this.updateView();
+        this.buildBounds();
     }
 
-    updateView(){
-        
+    updateView() {
+
         if (Game.IsPortrait) {
 
             this.dimensions = {

@@ -49,12 +49,12 @@ export default class ArenaScreen extends Screen {
         //this.worldRender = this.gameEngine.addGameObject(new EnvironmentManager());
         this.map = this.gameEngine.poolGameObject(BaseMap, true)
 
-        this.map.onMapUp.add((position)=>{
+        this.map.onMapUp.add((position) => {
             let entity = this.gameEngine.poolGameObject(BaseUnit, true)
 
             var local = this.gameplayContainer.toLocal(position)
             entity.x = local.x
-            entity.z = local.y 
+            entity.z = local.y
         })
 
         this.camera.setFollowPoint(this.map.mapCenter)
@@ -62,16 +62,19 @@ export default class ArenaScreen extends Screen {
     update(delta) {
         const timeScale = 1.25
 
-        if(this.map){
-            var zoom =  Utils.scaleToFitDimensions(this.map.dimensions, Game.Borders)
-            this.camera.targetZoom =zoom
+        if (this.map) {
+            var zoom = Utils.scaleToFitDimensions(this.map.dimensions, Game.Borders)
+            this.camera.targetZoom = zoom
+
+            this.camera.setFollowPoint(this.map.mapCenter)
+
         }
 
 
         const debugTimeScale = Game.Debug.timeScale | 1
-        const scaledTime =  delta * debugTimeScale * timeScale;
+        const scaledTime = delta * debugTimeScale * timeScale;
         delta *= debugTimeScale;
-        this.gameEngine.update(scaledTime, delta* debugTimeScale)
+        this.gameEngine.update(scaledTime, delta * debugTimeScale)
     }
     transitionOut(nextScreen, params) {
         this.removeEvents();

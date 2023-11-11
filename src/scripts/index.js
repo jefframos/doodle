@@ -166,14 +166,13 @@ function loadManifests() {
     }
 
 
-    spritesheetManifest['default'].push('image/pokes.json');
-    console.log(spritesheetManifest)
     for (var i = spritesheetManifest['default'].length - 1; i >= 0; i--) {
         let dest = 'assets/' + spritesheetManifest['default'][i]
-
+        
         jsons.push(dest);
         Game.MainLoader.add(dest)
     }
+    Game.MainLoader.add('pokes.json')
     Game.MainLoader.load(afterLoadManifests);
 }
 //PokiSDK.setDebug(true);

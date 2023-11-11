@@ -6,6 +6,7 @@ import RenderModule from "../../core/modules/RenderModule";
 import PhysicsEntity from "../../core/physics/PhysicsEntity";
 import WorldGameView from "../../core/view/WorldGameView";
 import GameStaticData from "../../data/GameStaticData";
+import UIUtils from "../../utils/UIUtils";
 import BaseMap from "./maps/BaseMap";
 
 export default class BaseUnit extends PhysicsEntity {
@@ -19,7 +20,7 @@ export default class BaseUnit extends PhysicsEntity {
         //this.gameView.view.scale.set(0.5)
         this.gameView.layer = RenderModule.RenderLayers.Gameplay
 
-        this.nameLabel = new PIXI.Text()
+        this.nameLabel = UIUtils.getPrimaryLabel()
         this.gameView.view.addChild(this.nameLabel)
 
         this.sin = Math.random()
@@ -55,6 +56,8 @@ export default class BaseUnit extends PhysicsEntity {
         this.speed = parseInt(stats.speed) / 256
 
         this.nameLabel.anchor.x = 0.5
+        this.nameLabel.style.fontSize = 14
+        this.nameLabel.scale.set(0.75)
         this.nameLabel.text = data.attribute.name
 
         let animationFrames = {

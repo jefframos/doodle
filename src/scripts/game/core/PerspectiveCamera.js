@@ -40,7 +40,7 @@ export default class PerspectiveCamera extends Camera {
             this.renderModule.container.pivot.x = utils.lerp(this.renderModule.container.pivot.x, this.followPoint.x, 0.1)
             this.renderModule.container.pivot.y = utils.lerp(this.renderModule.container.pivot.y, this.followPoint.z, 0.1)
 
-            Camera.Zoom = utils.lerp(Camera.Zoom, this.targetZoom, 0.01 * delta*60)
+            Camera.Zoom = utils.lerp(Camera.Zoom, this.targetZoom, 0.1 * delta*60)
 
             this.renderModule.container.scale.set(Camera.Zoom);
 
