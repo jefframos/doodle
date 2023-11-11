@@ -15,6 +15,7 @@ export default class BaseMap extends GameObject {
         super()
 
         this.onMapUp = new signals.Signal();
+        this.onAspectChange = new signals.Signal();
 
         this.gameView = new WorldGameView(this);
 
@@ -37,7 +38,13 @@ export default class BaseMap extends GameObject {
 
 
         this.team2Tower = this.addChild(Eugine.poolGameObject(BaseTower, true));
+        this.team2Tower2 = this.addChild(Eugine.poolGameObject(BaseTower, true));
+        this.team2Tower3 = this.addChild(Eugine.poolGameObject(BaseTower, true));
+
+
         this.team2Towers.push(this.team2Tower)
+        this.team2Towers.push(this.team2Tower2)
+        this.team2Towers.push(this.team2Tower3)
 
 
 
@@ -53,6 +60,9 @@ export default class BaseMap extends GameObject {
             this.onMapUp.dispatch(e.data.global)
         })
     }
+    getEnemieTowers(type){
+        return this.team2Towers
+    }
     start() {
 
         this.ladscapeEnvironment = [];
@@ -66,6 +76,8 @@ export default class BaseMap extends GameObject {
                 return;
             }
             this.aspectBuild = 'portrait'
+
+            this.onAspectChange.dispatch(this.aspectBuild)
 
             this.ladscapeEnvironment.forEach(element => {
                 element.destroy();
@@ -92,6 +104,8 @@ export default class BaseMap extends GameObject {
                 return;
             }
             this.aspectBuild = 'landscape'
+
+            this.onAspectChange.dispatch(this.aspectBuild)
 
             this.ladscapeEnvironment.forEach(element => {
                 element.destroy();
@@ -136,6 +150,12 @@ export default class BaseMap extends GameObject {
             this.team2Tower.x = this.dimensions.width / 2
             this.team2Tower.z = 50
 
+            this.team2Tower2.x = this.dimensions.width / 2 + this.dimensions.width / 4
+            this.team2Tower2.z = 150
+
+            this.team2Tower3.x = this.dimensions.width / 2 - this.dimensions.width / 4
+            this.team2Tower3.z = 150
+
             this.team1Tower.x = this.dimensions.width / 2
             this.team1Tower.z = this.dimensions.height - 50
         } else {
@@ -155,6 +175,13 @@ export default class BaseMap extends GameObject {
 
             this.team2Tower.x = this.dimensions.width - 50
             this.team2Tower.z = this.dimensions.height / 2
+
+            this.team2Tower2.x = this.dimensions.width - 150
+            this.team2Tower2.z = this.dimensions.height / 2 - this.dimensions.height / 4
+
+            this.team2Tower3.x = this.dimensions.width - 150
+            this.team2Tower3.z = this.dimensions.height / 2 + this.dimensions.height / 4
+
         }
 
         this.floorTexture.width = this.dimensions.width

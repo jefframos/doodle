@@ -8,24 +8,28 @@ const assets = [
 	"url":"assets/json\\localization_EN.json"
 	},
 	{
-	"id":"player-assets",
-	"url":"assets/json\\assets\\player-assets.json"
-	},
-	{
-	"id":"cards",
-	"url":"assets/json\\cards\\cards.json"
-	},
-	{
 	"id":"companion-animation",
 	"url":"assets/json\\animation\\companion-animation.json"
+	},
+	{
+	"id":"entity-animation",
+	"url":"assets/json\\animation\\entity-animation.json"
 	},
 	{
 	"id":"player-animation",
 	"url":"assets/json\\animation\\player-animation.json"
 	},
 	{
-	"id":"entity-animation",
-	"url":"assets/json\\animation\\entity-animation.json"
+	"id":"player-assets",
+	"url":"assets/json\\assets\\player-assets.json"
+	},
+	{
+	"id":"game-shop",
+	"url":"assets/json\\economy\\game-shop.json"
+	},
+	{
+	"id":"cards",
+	"url":"assets/json\\cards\\cards.json"
 	},
 	{
 	"id":"body-parts",
@@ -34,10 +38,6 @@ const assets = [
 	{
 	"id":"starter-inventory",
 	"url":"assets/json\\database\\starter-inventory.json"
-	},
-	{
-	"id":"game-shop",
-	"url":"assets/json\\economy\\game-shop.json"
 	},
 	{
 	"id":"companions",
@@ -64,18 +64,6 @@ const assets = [
 	"url":"assets/json\\environment\\level-3.json"
 	},
 	{
-	"id":"enemy-wave-01",
-	"url":"assets/json\\enemy-waves\\enemy-wave-01.json"
-	},
-	{
-	"id":"wavesBkp",
-	"url":"assets/json\\enemy-waves\\wavesBkp.json"
-	},
-	{
-	"id":"waves2",
-	"url":"assets/json\\enemy-waves\\waves2.json"
-	},
-	{
 	"id":"acessories",
 	"url":"assets/json\\misc\\acessories.json"
 	},
@@ -92,6 +80,18 @@ const assets = [
 	"url":"assets/json\\misc\\buff-debuff.json"
 	},
 	{
+	"id":"enemy-wave-01",
+	"url":"assets/json\\enemy-waves\\enemy-wave-01.json"
+	},
+	{
+	"id":"waves2",
+	"url":"assets/json\\enemy-waves\\waves2.json"
+	},
+	{
+	"id":"wavesBkp",
+	"url":"assets/json\\enemy-waves\\wavesBkp.json"
+	},
+	{
 	"id":"general-vfx",
 	"url":"assets/json\\vfx\\general-vfx.json"
 	},
@@ -100,16 +100,16 @@ const assets = [
 	"url":"assets/json\\vfx\\particle-behaviour.json"
 	},
 	{
-	"id":"weapon-vfx-pack",
-	"url":"assets/json\\vfx\\weapon-vfx-pack.json"
-	},
-	{
 	"id":"particle-descriptors",
 	"url":"assets/json\\vfx\\particle-descriptors.json"
 	},
 	{
 	"id":"weapon-vfx",
 	"url":"assets/json\\vfx\\weapon-vfx.json"
+	},
+	{
+	"id":"weapon-vfx-pack",
+	"url":"assets/json\\vfx\\weapon-vfx-pack.json"
 	},
 	{
 	"id":"main-weapons",

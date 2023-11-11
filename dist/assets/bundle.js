@@ -246,7 +246,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "interactiveTarget", function() { return __WEBPACK_IMPORTED_MODULE_3__pixi_interaction__["e"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pixi_app__ = __webpack_require__(131);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Application", function() { return __WEBPACK_IMPORTED_MODULE_4__pixi_app__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pixi_core__ = __webpack_require__(17);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AbstractBatchRenderer", function() { return __WEBPACK_IMPORTED_MODULE_5__pixi_core__["a"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AbstractRenderer", function() { return __WEBPACK_IMPORTED_MODULE_5__pixi_core__["b"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Attribute", function() { return __WEBPACK_IMPORTED_MODULE_5__pixi_core__["c"]; });
@@ -3735,7 +3735,7 @@ var _Transform = __webpack_require__(275);
 
 var _Transform2 = _interopRequireDefault(_Transform);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -4656,6 +4656,106 @@ module.exports = exports['default'];
 
 /***/ }),
 /* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _classCallCheck2 = __webpack_require__(0);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(1);
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Vector3 = function () {
+    function Vector3() {
+        var x = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+        var y = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+        var z = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+        (0, _classCallCheck3.default)(this, Vector3);
+
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
+
+    (0, _createClass3.default)(Vector3, [{
+        key: "copy",
+        value: function copy(target) {
+            this.x = target.x;
+            this.y = target.y;
+            this.z = target.z;
+        }
+    }, {
+        key: "zero",
+        value: function zero() {
+            this.x = 0;
+            this.y = 0;
+            this.z = 0;
+        }
+    }, {
+        key: "clone",
+        value: function clone() {
+            return new Vector3(this.x, this.y, this.z);
+        }
+    }], [{
+        key: "distance",
+        value: function distance(v1, v2) {
+            return Math.sqrt((v1.x - v2.x) * (v1.x - v2.x) + (v1.y - v2.y) * (v1.y - v2.y) + (v1.z - v2.z) * (v1.z - v2.z));
+        }
+    }, {
+        key: "distanceX",
+        value: function distanceX(v1, v2) {
+            return Math.sqrt((v1.x - v2.x) * (v1.x - v2.x));
+        }
+    }, {
+        key: "distanceZ",
+        value: function distanceZ(v1, v2) {
+            return Math.sqrt((v1.z - v2.z) * (v1.z - v2.z));
+        }
+    }, {
+        key: "atan2XZ",
+        value: function atan2XZ(v1, v2) {
+            return Math.atan2(v1.z - v2.z, v1.x - v2.x);
+        }
+    }, {
+        key: "sum",
+        value: function sum(v1, v2) {
+            return new Vector3(v1.x + v2.x, v1.y + v2.y, v1.z + v2.z);
+        }
+    }, {
+        key: "mult",
+        value: function mult(v1, v2) {
+            return new Vector3(v1.x * v2.x, v1.y * v2.y, v1.z * v2.z);
+        }
+    }, {
+        key: "XZtoXY",
+        value: function XZtoXY(v1) {
+            return new Vector3(v1.x, v1.z, 0);
+        }
+    }, {
+        key: "lerp",
+        value: function lerp(v1, v2, a) {
+
+            return new Vector3(v1.x * (1 - a) + v2.x * a, v1.y * (1 - a) + v2.y * a, v1.z * (1 - a) + v2.z * a);
+        }
+    }]);
+    return Vector3;
+}();
+
+exports.default = Vector3;
+module.exports = exports["default"];
+
+/***/ }),
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15684,106 +15784,6 @@ var BatchRenderer = BatchPluginFactory.create();
 
 
 /***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _classCallCheck2 = __webpack_require__(0);
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = __webpack_require__(1);
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Vector3 = function () {
-    function Vector3() {
-        var x = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-        var y = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-        var z = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-        (0, _classCallCheck3.default)(this, Vector3);
-
-        this.x = x;
-        this.y = y;
-        this.z = z;
-    }
-
-    (0, _createClass3.default)(Vector3, [{
-        key: "copy",
-        value: function copy(target) {
-            this.x = target.x;
-            this.y = target.y;
-            this.z = target.z;
-        }
-    }, {
-        key: "zero",
-        value: function zero() {
-            this.x = 0;
-            this.y = 0;
-            this.z = 0;
-        }
-    }, {
-        key: "clone",
-        value: function clone() {
-            return new Vector3(this.x, this.y, this.z);
-        }
-    }], [{
-        key: "distance",
-        value: function distance(v1, v2) {
-            return Math.sqrt((v1.x - v2.x) * (v1.x - v2.x) + (v1.y - v2.y) * (v1.y - v2.y) + (v1.z - v2.z) * (v1.z - v2.z));
-        }
-    }, {
-        key: "distanceX",
-        value: function distanceX(v1, v2) {
-            return Math.sqrt((v1.x - v2.x) * (v1.x - v2.x));
-        }
-    }, {
-        key: "distanceZ",
-        value: function distanceZ(v1, v2) {
-            return Math.sqrt((v1.z - v2.z) * (v1.z - v2.z));
-        }
-    }, {
-        key: "atan2XZ",
-        value: function atan2XZ(v1, v2) {
-            return Math.atan2(v1.z - v2.z, v1.x - v2.x);
-        }
-    }, {
-        key: "sum",
-        value: function sum(v1, v2) {
-            return new Vector3(v1.x + v2.x, v1.y + v2.y, v1.z + v2.z);
-        }
-    }, {
-        key: "mult",
-        value: function mult(v1, v2) {
-            return new Vector3(v1.x * v2.x, v1.y * v2.y, v1.z * v2.z);
-        }
-    }, {
-        key: "XZtoXY",
-        value: function XZtoXY(v1) {
-            return new Vector3(v1.x, v1.z, 0);
-        }
-    }, {
-        key: "lerp",
-        value: function lerp(v1, v2, a) {
-
-            return new Vector3(v1.x * (1 - a) + v2.x * a, v1.y * (1 - a) + v2.y * a, v1.z * (1 - a) + v2.z * a);
-        }
-    }]);
-    return Vector3;
-}();
-
-exports.default = Vector3;
-module.exports = exports["default"];
-
-/***/ }),
 /* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15882,7 +15882,7 @@ var _Utils = __webpack_require__(7);
 
 var _Utils2 = _interopRequireDefault(_Utils);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -23699,7 +23699,7 @@ var _Utils = __webpack_require__(7);
 
 var _Utils2 = _interopRequireDefault(_Utils);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -26355,7 +26355,7 @@ var _Utils = __webpack_require__(7);
 
 var _Utils2 = _interopRequireDefault(_Utils);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -27193,7 +27193,7 @@ var _Utils = __webpack_require__(7);
 
 var _Utils2 = _interopRequireDefault(_Utils);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -30053,7 +30053,7 @@ var _Utils = __webpack_require__(7);
 
 var _Utils2 = _interopRequireDefault(_Utils);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -31912,7 +31912,7 @@ var _Utils = __webpack_require__(7);
 
 var _Utils2 = _interopRequireDefault(_Utils);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -32927,7 +32927,7 @@ module.exports = exports["default"];
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Sprite; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_constants__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pixi_display__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pixi_math__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pixi_settings__ = __webpack_require__(28);
@@ -34789,7 +34789,7 @@ module.exports = exports["default"];
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return LoaderResource; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return TextureLoader; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resource_loader__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_core__ = __webpack_require__(17);
 /*!
  * @pixi/loaders - v5.3.12
  * Compiled Wed, 23 Mar 2022 18:34:28 UTC
@@ -36334,7 +36334,7 @@ var _Utils = __webpack_require__(7);
 
 var _Utils2 = _interopRequireDefault(_Utils);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -36542,7 +36542,7 @@ var _GameObject2 = __webpack_require__(12);
 
 var _GameObject3 = _interopRequireDefault(_GameObject2);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -36743,7 +36743,7 @@ module.exports = exports['default'];
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return TextMetrics; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return TextStyle; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_sprite__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pixi_settings__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pixi_math__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pixi_utils__ = __webpack_require__(22);
@@ -38814,7 +38814,7 @@ var Text = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return MeshBatchUvs; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return MeshGeometry; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return MeshMaterial; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_math__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pixi_constants__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pixi_display__ = __webpack_require__(29);
@@ -41416,7 +41416,7 @@ var _Utils = __webpack_require__(7);
 
 var _Utils2 = _interopRequireDefault(_Utils);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -52963,6 +52963,10 @@ var GameViewSpriteSheet = function (_BaseComponent) {
         value: function destroy() {
             (0, _get3.default)(GameViewSpriteSheet.prototype.__proto__ || (0, _getPrototypeOf2.default)(GameViewSpriteSheet.prototype), 'destroy', this).call(this);
             _Pool2.default.instance.returnElement(this.spriteSheet);
+
+            if (this.spriteSheet) {
+                this.spriteSheet.reset();
+            }
             this.spriteSheet = null;
         }
     }, {
@@ -53397,7 +53401,7 @@ var _Utils = __webpack_require__(7);
 
 var _Utils2 = _interopRequireDefault(_Utils);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -56123,7 +56127,7 @@ var _SpriteSheetBehaviour = __webpack_require__(60);
 
 var _SpriteSheetBehaviour2 = _interopRequireDefault(_SpriteSheetBehaviour);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -60135,7 +60139,7 @@ var InteractionManager = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Application; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_display__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_core__ = __webpack_require__(17);
 /*!
  * @pixi/app - v5.3.12
  * Compiled Wed, 23 Mar 2022 18:34:28 UTC
@@ -60628,7 +60632,7 @@ Object.defineProperties(Runner.prototype, {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Extract; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_utils__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_math__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pixi_core__ = __webpack_require__(17);
 /*!
  * @pixi/extract - v5.3.12
  * Compiled Wed, 23 Mar 2022 18:34:28 UTC
@@ -60863,7 +60867,7 @@ var Extract = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_constants__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_display__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pixi_utils__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pixi_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pixi_math__ = __webpack_require__(23);
 /*!
  * @pixi/particles - v5.3.12
@@ -61687,7 +61691,7 @@ var ParticleRenderer = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Prepare; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return TimeLimiter; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_settings__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pixi_graphics__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pixi_ticker__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pixi_display__ = __webpack_require__(29);
@@ -62342,7 +62346,7 @@ var TimeLimiter = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return LINE_JOIN; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return LineStyle; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return index; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_math__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pixi_utils__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pixi_constants__ = __webpack_require__(42);
@@ -65624,7 +65628,7 @@ var Graphics = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Spritesheet; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SpritesheetLoader; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_math__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pixi_utils__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pixi_loaders__ = __webpack_require__(71);
 /*!
@@ -65973,7 +65977,7 @@ var SpritesheetLoader = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TilingSprite; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return TilingSpriteRenderer; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_math__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pixi_sprite__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pixi_utils__ = __webpack_require__(22);
@@ -66401,7 +66405,7 @@ var TilingSpriteRenderer = /** @class */ (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_settings__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pixi_mesh__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pixi_utils__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pixi_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pixi_text__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pixi_display__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pixi_loaders__ = __webpack_require__(71);
@@ -74233,7 +74237,7 @@ var _createClass2 = __webpack_require__(1);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -74375,7 +74379,7 @@ var _SpriteJump = __webpack_require__(117);
 
 var _SpriteJump2 = _interopRequireDefault(_SpriteJump);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -74615,7 +74619,7 @@ var _Utils = __webpack_require__(7);
 
 var _Utils2 = _interopRequireDefault(_Utils);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -76389,7 +76393,7 @@ module.exports = exports["default"];
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+            value: true
 });
 
 var _getPrototypeOf = __webpack_require__(2);
@@ -76420,7 +76424,7 @@ var _GameObject2 = __webpack_require__(12);
 
 var _GameObject3 = _interopRequireDefault(_GameObject2);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -76451,167 +76455,194 @@ var _StaticPhysicObject2 = _interopRequireDefault(_StaticPhysicObject);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var BaseMap = function (_GameObject) {
-    (0, _inherits3.default)(BaseMap, _GameObject);
+            (0, _inherits3.default)(BaseMap, _GameObject);
 
-    function BaseMap() {
-        (0, _classCallCheck3.default)(this, BaseMap);
+            function BaseMap() {
+                        (0, _classCallCheck3.default)(this, BaseMap);
 
-        var _this = (0, _possibleConstructorReturn3.default)(this, (BaseMap.__proto__ || (0, _getPrototypeOf2.default)(BaseMap)).call(this));
+                        var _this = (0, _possibleConstructorReturn3.default)(this, (BaseMap.__proto__ || (0, _getPrototypeOf2.default)(BaseMap)).call(this));
 
-        _this.onMapUp = new _signals2.default.Signal();
+                        _this.onMapUp = new _signals2.default.Signal();
+                        _this.onAspectChange = new _signals2.default.Signal();
 
-        _this.gameView = new _WorldGameView2.default(_this);
+                        _this.gameView = new _WorldGameView2.default(_this);
 
-        _this.gameView.view = new PIXI.Container();
-        _this.gameView.layer = _RenderModule2.default.RenderLayers.Base;
+                        _this.gameView.view = new PIXI.Container();
+                        _this.gameView.layer = _RenderModule2.default.RenderLayers.Base;
 
-        _this.floorTexture = new PIXI.TilingSprite(PIXI.Texture.from('grass-patch-1'), 256, 256);
-        _this.gameView.view.addChild(_this.floorTexture);
+                        _this.floorTexture = new PIXI.TilingSprite(PIXI.Texture.from('grass-patch-1'), 256, 256);
+                        _this.gameView.view.addChild(_this.floorTexture);
 
-        _this.dimensions = {
-            width: 1000,
-            height: 600
-        };
+                        _this.dimensions = {
+                                    width: 1000,
+                                    height: 600
+                        };
 
-        _this.team1Towers = [];
-        _this.team2Towers = [];
+                        _this.team1Towers = [];
+                        _this.team2Towers = [];
 
-        _this.team1Tower = _this.addChild(Eugine.poolGameObject(_BaseTower2.default, true));
-        _this.team1Towers.push(_this.team1Tower);
+                        _this.team1Tower = _this.addChild(Eugine.poolGameObject(_BaseTower2.default, true));
+                        _this.team1Towers.push(_this.team1Tower);
 
-        _this.team2Tower = _this.addChild(Eugine.poolGameObject(_BaseTower2.default, true));
-        _this.team2Towers.push(_this.team2Tower);
+                        _this.team2Tower = _this.addChild(Eugine.poolGameObject(_BaseTower2.default, true));
+                        _this.team2Tower2 = _this.addChild(Eugine.poolGameObject(_BaseTower2.default, true));
+                        _this.team2Tower3 = _this.addChild(Eugine.poolGameObject(_BaseTower2.default, true));
 
-        _this.dropZone = new PIXI.Sprite.from('tile');
-        _this.gameView.view.addChild(_this.dropZone);
-        _this.dropZone.alpha = 0.01;
+                        _this.team2Towers.push(_this.team2Tower);
+                        _this.team2Towers.push(_this.team2Tower2);
+                        _this.team2Towers.push(_this.team2Tower3);
 
-        _this.aspectBuild = '';
+                        _this.dropZone = new PIXI.Sprite.from('tile');
+                        _this.gameView.view.addChild(_this.dropZone);
+                        _this.dropZone.alpha = 0.01;
 
-        _InteractableView2.default.addMouseUp(_this.dropZone, function (e) {
-            _this.onMapUp.dispatch(e.data.global);
-        });
-        return _this;
-    }
+                        _this.aspectBuild = '';
 
-    (0, _createClass3.default)(BaseMap, [{
-        key: "start",
-        value: function start() {
-
-            this.ladscapeEnvironment = [];
-            this.updateView();
-            this.buildBounds();
-        }
-    }, {
-        key: "buildBounds",
-        value: function buildBounds() {
-
-            if (_Game2.default.IsPortrait) {
-                if (this.aspectBuild == 'portrait') {
-                    return;
-                }
-                this.aspectBuild = 'portrait';
-
-                this.ladscapeEnvironment.forEach(function (element) {
-                    element.destroy();
-                });
-                this.ladscapeEnvironment = [];
-
-                var top = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
-                top.build({ x: this.dimensions.width / 2, y: 0, width: this.dimensions.width, height: 40, layer: _RenderModule2.default.RenderLayers.Gameplay });
-                this.ladscapeEnvironment.push(top);
-
-                var bottom = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
-                bottom.build({ x: this.dimensions.width / 2, y: this.dimensions.height, width: this.dimensions.width, height: 40, layer: _RenderModule2.default.RenderLayers.Gameplay });
-                this.ladscapeEnvironment.push(bottom);
-
-                var left = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
-                left.build({ x: 0, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: _RenderModule2.default.RenderLayers.Gameplay });
-                this.ladscapeEnvironment.push(left);
-
-                var right = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
-                right.build({ x: this.dimensions.width, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: _RenderModule2.default.RenderLayers.Gameplay });
-                this.ladscapeEnvironment.push(right);
-            } else {
-                if (this.aspectBuild == 'landscape') {
-                    return;
-                }
-                this.aspectBuild = 'landscape';
-
-                this.ladscapeEnvironment.forEach(function (element) {
-                    element.destroy();
-                });
-                this.ladscapeEnvironment = [];
-
-                var _top = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
-                _top.build({ x: this.dimensions.width / 2, y: 0, width: this.dimensions.width, height: 40, layer: _RenderModule2.default.RenderLayers.Gameplay });
-                this.ladscapeEnvironment.push(_top);
-
-                var _bottom = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
-                _bottom.build({ x: this.dimensions.width / 2, y: this.dimensions.height, width: this.dimensions.width, height: 40, layer: _RenderModule2.default.RenderLayers.Gameplay });
-                this.ladscapeEnvironment.push(_bottom);
-
-                var _left = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
-                _left.build({ x: 0, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: _RenderModule2.default.RenderLayers.Gameplay });
-                this.ladscapeEnvironment.push(_left);
-
-                var _right = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
-                _right.build({ x: this.dimensions.width, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: _RenderModule2.default.RenderLayers.Gameplay });
-                this.ladscapeEnvironment.push(_right);
-            }
-        }
-    }, {
-        key: "resize",
-        value: function resize(resolution, innerResolution) {
-
-            this.updateView();
-            this.buildBounds();
-        }
-    }, {
-        key: "updateView",
-        value: function updateView() {
-
-            if (_Game2.default.IsPortrait) {
-
-                this.dimensions = {
-                    width: 600,
-                    height: 1000
-                };
-                this.dropZone.width = this.dimensions.width;
-                this.dropZone.height = this.dimensions.height / 2;
-                this.dropZone.y = this.dimensions.height / 2;
-
-                this.team2Tower.x = this.dimensions.width / 2;
-                this.team2Tower.z = 50;
-
-                this.team1Tower.x = this.dimensions.width / 2;
-                this.team1Tower.z = this.dimensions.height - 50;
-            } else {
-
-                this.dimensions = {
-                    width: 1000,
-                    height: 600
-                };
-
-                this.dropZone.y = 0;
-
-                this.dropZone.width = this.dimensions.width / 2;
-                this.dropZone.height = this.dimensions.height;
-
-                this.team1Tower.x = 50;
-                this.team1Tower.z = this.dimensions.height / 2;
-
-                this.team2Tower.x = this.dimensions.width - 50;
-                this.team2Tower.z = this.dimensions.height / 2;
+                        _InteractableView2.default.addMouseUp(_this.dropZone, function (e) {
+                                    _this.onMapUp.dispatch(e.data.global);
+                        });
+                        return _this;
             }
 
-            this.floorTexture.width = this.dimensions.width;
-            this.floorTexture.height = this.dimensions.height;
+            (0, _createClass3.default)(BaseMap, [{
+                        key: "getEnemieTowers",
+                        value: function getEnemieTowers(type) {
+                                    return this.team2Towers;
+                        }
+            }, {
+                        key: "start",
+                        value: function start() {
 
-            this.mapCenter = new _Vector2.default(this.floorTexture.width / 2, 0, this.floorTexture.height / 2);
-        }
-    }]);
-    return BaseMap;
+                                    this.ladscapeEnvironment = [];
+                                    this.updateView();
+                                    this.buildBounds();
+                        }
+            }, {
+                        key: "buildBounds",
+                        value: function buildBounds() {
+
+                                    if (_Game2.default.IsPortrait) {
+                                                if (this.aspectBuild == 'portrait') {
+                                                            return;
+                                                }
+                                                this.aspectBuild = 'portrait';
+
+                                                this.onAspectChange.dispatch(this.aspectBuild);
+
+                                                this.ladscapeEnvironment.forEach(function (element) {
+                                                            element.destroy();
+                                                });
+                                                this.ladscapeEnvironment = [];
+
+                                                var top = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                                                top.build({ x: this.dimensions.width / 2, y: 0, width: this.dimensions.width, height: 40, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                                                this.ladscapeEnvironment.push(top);
+
+                                                var bottom = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                                                bottom.build({ x: this.dimensions.width / 2, y: this.dimensions.height, width: this.dimensions.width, height: 40, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                                                this.ladscapeEnvironment.push(bottom);
+
+                                                var left = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                                                left.build({ x: 0, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                                                this.ladscapeEnvironment.push(left);
+
+                                                var right = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                                                right.build({ x: this.dimensions.width, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                                                this.ladscapeEnvironment.push(right);
+                                    } else {
+                                                if (this.aspectBuild == 'landscape') {
+                                                            return;
+                                                }
+                                                this.aspectBuild = 'landscape';
+
+                                                this.onAspectChange.dispatch(this.aspectBuild);
+
+                                                this.ladscapeEnvironment.forEach(function (element) {
+                                                            element.destroy();
+                                                });
+                                                this.ladscapeEnvironment = [];
+
+                                                var _top = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                                                _top.build({ x: this.dimensions.width / 2, y: 0, width: this.dimensions.width, height: 40, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                                                this.ladscapeEnvironment.push(_top);
+
+                                                var _bottom = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                                                _bottom.build({ x: this.dimensions.width / 2, y: this.dimensions.height, width: this.dimensions.width, height: 40, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                                                this.ladscapeEnvironment.push(_bottom);
+
+                                                var _left = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                                                _left.build({ x: 0, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                                                this.ladscapeEnvironment.push(_left);
+
+                                                var _right = this.addChild(Eugine.poolGameObject(_StaticPhysicObject2.default, false));
+                                                _right.build({ x: this.dimensions.width, y: this.dimensions.height / 2, width: 40, height: this.dimensions.height, layer: _RenderModule2.default.RenderLayers.Gameplay });
+                                                this.ladscapeEnvironment.push(_right);
+                                    }
+                        }
+            }, {
+                        key: "resize",
+                        value: function resize(resolution, innerResolution) {
+
+                                    this.updateView();
+                                    this.buildBounds();
+                        }
+            }, {
+                        key: "updateView",
+                        value: function updateView() {
+
+                                    if (_Game2.default.IsPortrait) {
+
+                                                this.dimensions = {
+                                                            width: 600,
+                                                            height: 1000
+                                                };
+                                                this.dropZone.width = this.dimensions.width;
+                                                this.dropZone.height = this.dimensions.height / 2;
+                                                this.dropZone.y = this.dimensions.height / 2;
+
+                                                this.team2Tower.x = this.dimensions.width / 2;
+                                                this.team2Tower.z = 50;
+
+                                                this.team2Tower2.x = this.dimensions.width / 2 + this.dimensions.width / 4;
+                                                this.team2Tower2.z = 150;
+
+                                                this.team2Tower3.x = this.dimensions.width / 2 - this.dimensions.width / 4;
+                                                this.team2Tower3.z = 150;
+
+                                                this.team1Tower.x = this.dimensions.width / 2;
+                                                this.team1Tower.z = this.dimensions.height - 50;
+                                    } else {
+
+                                                this.dimensions = {
+                                                            width: 1000,
+                                                            height: 600
+                                                };
+
+                                                this.dropZone.y = 0;
+
+                                                this.dropZone.width = this.dimensions.width / 2;
+                                                this.dropZone.height = this.dimensions.height;
+
+                                                this.team1Tower.x = 50;
+                                                this.team1Tower.z = this.dimensions.height / 2;
+
+                                                this.team2Tower.x = this.dimensions.width - 50;
+                                                this.team2Tower.z = this.dimensions.height / 2;
+
+                                                this.team2Tower2.x = this.dimensions.width - 150;
+                                                this.team2Tower2.z = this.dimensions.height / 2 - this.dimensions.height / 4;
+
+                                                this.team2Tower3.x = this.dimensions.width - 150;
+                                                this.team2Tower3.z = this.dimensions.height / 2 + this.dimensions.height / 4;
+                                    }
+
+                                    this.floorTexture.width = this.dimensions.width;
+                                    this.floorTexture.height = this.dimensions.height;
+
+                                    this.mapCenter = new _Vector2.default(this.floorTexture.width / 2, 0, this.floorTexture.height / 2);
+                        }
+            }]);
+            return BaseMap;
 }(_GameObject3.default);
 
 exports.default = BaseMap;
@@ -82436,7 +82467,7 @@ module.exports = exports['default'];
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AlphaFilter; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(17);
 /*!
  * @pixi/filter-alpha - v5.3.12
  * Compiled Wed, 23 Mar 2022 18:34:28 UTC
@@ -82535,7 +82566,7 @@ var AlphaFilter = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BlurFilter; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return BlurFilterPass; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_settings__ = __webpack_require__(28);
 /*!
  * @pixi/filter-blur - v5.3.12
@@ -83373,7 +83404,7 @@ var BlurFilter = /** @class */ (function (_super) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ColorMatrixFilter; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(17);
 /*!
  * @pixi/filter-color-matrix - v5.3.12
  * Compiled Wed, 23 Mar 2022 18:34:28 UTC
@@ -83914,7 +83945,7 @@ ColorMatrixFilter.prototype.grayscale = ColorMatrixFilter.prototype.greyscale;
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DisplacementFilter; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_math__ = __webpack_require__(23);
 /*!
  * @pixi/filter-displacement - v5.3.12
@@ -84059,7 +84090,7 @@ var DisplacementFilter = /** @class */ (function (_super) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FXAAFilter; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(17);
 /*!
  * @pixi/filter-fxaa - v5.3.12
  * Compiled Wed, 23 Mar 2022 18:34:28 UTC
@@ -84132,7 +84163,7 @@ var FXAAFilter = /** @class */ (function (_super) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NoiseFilter; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(17);
 /*!
  * @pixi/filter-noise - v5.3.12
  * Compiled Wed, 23 Mar 2022 18:34:28 UTC
@@ -84245,7 +84276,7 @@ var NoiseFilter = /** @class */ (function (_super) {
 
 "use strict";
 /* unused harmony export CacheData */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_sprite__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pixi_display__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pixi_math__ = __webpack_require__(23);
@@ -84690,7 +84721,7 @@ __WEBPACK_IMPORTED_MODULE_0__pixi_display__["c" /* DisplayObject */].prototype.g
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return SimpleRope; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_mesh__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_constants__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pixi_core__ = __webpack_require__(17);
 /*!
  * @pixi/mesh-extras - v5.3.12
  * Compiled Wed, 23 Mar 2022 18:34:28 UTC
@@ -85428,7 +85459,7 @@ var NineSlicePlane = /** @class */ (function (_super) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimatedSprite; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pixi_core__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pixi_sprite__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pixi_ticker__ = __webpack_require__(56);
 /*!
@@ -92471,7 +92502,7 @@ var _classCallCheck2 = __webpack_require__(0);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -93018,7 +93049,7 @@ var _Utils = __webpack_require__(7);
 
 var _Utils2 = _interopRequireDefault(_Utils);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -93382,7 +93413,7 @@ var _Utils = __webpack_require__(7);
 
 var _Utils2 = _interopRequireDefault(_Utils);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -97688,7 +97719,7 @@ var _Utils = __webpack_require__(7);
 
 var _Utils2 = _interopRequireDefault(_Utils);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -98533,7 +98564,7 @@ var _Shadow = __webpack_require__(33);
 
 var _Shadow2 = _interopRequireDefault(_Shadow);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -99210,7 +99241,7 @@ var _Utils = __webpack_require__(7);
 
 var _Utils2 = _interopRequireDefault(_Utils);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -104154,7 +104185,7 @@ var _PerspectiveCamera = __webpack_require__(338);
 
 var _PerspectiveCamera2 = _interopRequireDefault(_PerspectiveCamera);
 
-var _Vector = __webpack_require__(17);
+var _Vector = __webpack_require__(16);
 
 var _Vector2 = _interopRequireDefault(_Vector);
 
@@ -104707,6 +104738,10 @@ var _Layer = __webpack_require__(25);
 
 var _Layer2 = _interopRequireDefault(_Layer);
 
+var _Vector = __webpack_require__(16);
+
+var _Vector2 = _interopRequireDefault(_Vector);
+
 var _RenderModule = __webpack_require__(11);
 
 var _RenderModule2 = _interopRequireDefault(_RenderModule);
@@ -104781,7 +104816,13 @@ var BaseUnit = function (_PhysicsEntity) {
             var forme = data.formes[0].forme[0];
             var stats = forme.stats[0].attribute;
 
+            this.positionNormal = {
+                x: 0,
+                y: 0
+            };
             this.speed = parseInt(stats.speed) / 256;
+
+            this.aspect = 'landscape';
 
             this.nameLabel.anchor.x = 0.5;
             this.nameLabel.style.fontSize = 14;
@@ -104824,8 +104865,37 @@ var BaseUnit = function (_PhysicsEntity) {
             if (!this.worldMap) {
                 this.engine.callbackWhenAdding(_BaseMap2.default, function (worldMap) {
                     _this2.worldMap = worldMap[0];
+                    _this2.initializeMap();
                 });
-            } else {}
+            } else {
+                this.initializeMap();
+            }
+        }
+    }, {
+        key: "initializeMap",
+        value: function initializeMap() {
+            this.worldMap.onAspectChange.add(this.onAspectChange.bind(this));
+            this.targets = this.worldMap.getEnemieTowers();
+        }
+    }, {
+        key: "onAspectChange",
+        value: function onAspectChange(aspect) {}
+    }, {
+        key: "findClosestTower",
+        value: function findClosestTower(point) {
+            var closest = 0;
+            var minDist = 999999;
+            for (var i = 0; i < this.targets.length; i++) {
+                var tower = this.targets[i];
+
+                var dist = _Vector2.default.distance(tower.transform.position, point);
+                if (dist < minDist) {
+                    minDist = dist;
+                    closest = i;
+                }
+            }
+
+            return this.targets[closest];
         }
     }, {
         key: "update",
@@ -104834,10 +104904,26 @@ var BaseUnit = function (_PhysicsEntity) {
 
             this.sin += delta;
 
-            this.physics.velocity.x = Math.sin(this.sin) * this.speed;
             // this.physics.velocity.z = Math.cos(this.sin) * this.speed
-
             this.spriteSheet.play(this.getCardinalDirection(this.physics.velocity.x, this.physics.velocity.z));
+
+            if (this.worldMap) {
+
+                this.positionNormal.x = this.transform.x / this.worldMap.dimensions.width;
+                this.positionNormal.y = this.transform.z / this.worldMap.dimensions.height;
+
+                var target = this.findClosestTower(this.transform.position);
+
+                var angle = _Vector2.default.atan2XZ(target.transform.position, this.transform.position);
+
+                this.physics.velocity.x = Math.cos(angle) * this.speed;
+                this.physics.velocity.z = Math.sin(angle) * this.speed;
+
+                if (_Vector2.default.distance(target.transform.position, this.transform.position) < 30) {
+                    this.destroy();
+                }
+            }
+
             //console.log(Math.sin(this.physics.velocity.x))
         }
     }, {
@@ -109061,11 +109147,11 @@ var assets = [{
 	"id": "Cartoon-Mouth-Sound-20",
 	"url": "assets/audio\\Cartoon-Mouth-Sound-20.mp3"
 }, {
-	"id": "FloatingCities",
-	"url": "assets/audio\\FloatingCities.mp3"
-}, {
 	"id": "dropTile",
 	"url": "assets/audio\\dropTile.mp3"
+}, {
+	"id": "FloatingCities",
+	"url": "assets/audio\\FloatingCities.mp3"
 }, {
 	"id": "getstar",
 	"url": "assets/audio\\getstar.mp3"
@@ -109088,20 +109174,23 @@ var assets = [{
 	"id": "place",
 	"url": "assets/audio\\place.mp3"
 }, {
-	"id": "Ping-Slide-Down",
-	"url": "assets/audio\\Ping-Slide-Down.mp3"
-}, {
 	"id": "Pop-Low-Pitch-Up-02",
 	"url": "assets/audio\\Pop-Low-Pitch-Up-02.mp3"
 }, {
-	"id": "Pop-Tone",
-	"url": "assets/audio\\Pop-Tone.mp3"
+	"id": "Ping-Slide-Down",
+	"url": "assets/audio\\Ping-Slide-Down.mp3"
 }, {
 	"id": "Pop-Musical",
 	"url": "assets/audio\\Pop-Musical.mp3"
 }, {
+	"id": "Pop-Tone",
+	"url": "assets/audio\\Pop-Tone.mp3"
+}, {
 	"id": "pop",
 	"url": "assets/audio\\pop.mp3"
+}, {
+	"id": "shoosh",
+	"url": "assets/audio\\shoosh.mp3"
 }, {
 	"id": "pop2",
 	"url": "assets/audio\\pop2.mp3"
@@ -109109,20 +109198,17 @@ var assets = [{
 	"id": "slot-machine",
 	"url": "assets/audio\\slot-machine.mp3"
 }, {
-	"id": "shoosh",
-	"url": "assets/audio\\shoosh.mp3"
+	"id": "Tap-01",
+	"url": "assets/audio\\Tap-01.mp3"
 }, {
 	"id": "squash1",
 	"url": "assets/audio\\squash1.mp3"
 }, {
-	"id": "Synth-Appear-01",
-	"url": "assets/audio\\Synth-Appear-01.mp3"
-}, {
 	"id": "teleport",
 	"url": "assets/audio\\teleport.mp3"
 }, {
-	"id": "Tap-01",
-	"url": "assets/audio\\Tap-01.mp3"
+	"id": "Synth-Appear-01",
+	"url": "assets/audio\\Synth-Appear-01.mp3"
 }];
 
 exports.default = assets;
@@ -109305,29 +109391,29 @@ var assets = [{
 	"id": "localization_EN",
 	"url": "assets/json\\localization_EN.json"
 }, {
-	"id": "player-assets",
-	"url": "assets/json\\assets\\player-assets.json"
-}, {
-	"id": "cards",
-	"url": "assets/json\\cards\\cards.json"
-}, {
 	"id": "companion-animation",
 	"url": "assets/json\\animation\\companion-animation.json"
+}, {
+	"id": "entity-animation",
+	"url": "assets/json\\animation\\entity-animation.json"
 }, {
 	"id": "player-animation",
 	"url": "assets/json\\animation\\player-animation.json"
 }, {
-	"id": "entity-animation",
-	"url": "assets/json\\animation\\entity-animation.json"
+	"id": "player-assets",
+	"url": "assets/json\\assets\\player-assets.json"
+}, {
+	"id": "game-shop",
+	"url": "assets/json\\economy\\game-shop.json"
+}, {
+	"id": "cards",
+	"url": "assets/json\\cards\\cards.json"
 }, {
 	"id": "body-parts",
 	"url": "assets/json\\database\\body-parts.json"
 }, {
 	"id": "starter-inventory",
 	"url": "assets/json\\database\\starter-inventory.json"
-}, {
-	"id": "game-shop",
-	"url": "assets/json\\economy\\game-shop.json"
 }, {
 	"id": "companions",
 	"url": "assets/json\\entity\\companions.json"
@@ -109347,15 +109433,6 @@ var assets = [{
 	"id": "level-3",
 	"url": "assets/json\\environment\\level-3.json"
 }, {
-	"id": "enemy-wave-01",
-	"url": "assets/json\\enemy-waves\\enemy-wave-01.json"
-}, {
-	"id": "wavesBkp",
-	"url": "assets/json\\enemy-waves\\wavesBkp.json"
-}, {
-	"id": "waves2",
-	"url": "assets/json\\enemy-waves\\waves2.json"
-}, {
 	"id": "acessories",
 	"url": "assets/json\\misc\\acessories.json"
 }, {
@@ -109368,20 +109445,29 @@ var assets = [{
 	"id": "buff-debuff",
 	"url": "assets/json\\misc\\buff-debuff.json"
 }, {
+	"id": "enemy-wave-01",
+	"url": "assets/json\\enemy-waves\\enemy-wave-01.json"
+}, {
+	"id": "waves2",
+	"url": "assets/json\\enemy-waves\\waves2.json"
+}, {
+	"id": "wavesBkp",
+	"url": "assets/json\\enemy-waves\\wavesBkp.json"
+}, {
 	"id": "general-vfx",
 	"url": "assets/json\\vfx\\general-vfx.json"
 }, {
 	"id": "particle-behaviour",
 	"url": "assets/json\\vfx\\particle-behaviour.json"
 }, {
-	"id": "weapon-vfx-pack",
-	"url": "assets/json\\vfx\\weapon-vfx-pack.json"
-}, {
 	"id": "particle-descriptors",
 	"url": "assets/json\\vfx\\particle-descriptors.json"
 }, {
 	"id": "weapon-vfx",
 	"url": "assets/json\\vfx\\weapon-vfx.json"
+}, {
+	"id": "weapon-vfx-pack",
+	"url": "assets/json\\vfx\\weapon-vfx-pack.json"
 }, {
 	"id": "main-weapons",
 	"url": "assets/json\\weapons\\main-weapons.json"

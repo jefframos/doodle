@@ -2,6 +2,7 @@
 import GameViewSpriteSheet from "../../components/GameViewSpriteSheet";
 import Shadow from "../../components/view/Shadow";
 import Layer from "../../core/Layer";
+import Vector3 from "../../core/gameObject/Vector3";
 import RenderModule from "../../core/modules/RenderModule";
 import PhysicsEntity from "../../core/physics/PhysicsEntity";
 import WorldGameView from "../../core/view/WorldGameView";
@@ -52,8 +53,13 @@ export default class BaseUnit extends PhysicsEntity {
         var stats = forme.stats[0].attribute
 
 
-
+        this.positionNormal = {
+            x:0,
+            y:0
+        }
         this.speed = parseInt(stats.speed) / 256
+
+        this.aspect = 'landscape'
 
         this.nameLabel.anchor.x = 0.5
         this.nameLabel.style.fontSize = 14
@@ -94,19 +100,63 @@ export default class BaseUnit extends PhysicsEntity {
         if (!this.worldMap) {
             this.engine.callbackWhenAdding(BaseMap, (worldMap) => {
                 this.worldMap = worldMap[0];
+                this.initializeMap();
             });
         } else {
+            this.initializeMap();
         }
     }
+    initializeMap(){
+        this.worldMap.onAspectChange.add(this.onAspectChange.bind(this))
+        this.targets = this.worldMap.getEnemieTowers();
+
+    }
+    onAspectChange(aspect){
+        
+    }
+    
+    findClosestTower(point) {
+        let closest = 0;
+        let minDist = 999999;
+        for (var i = 0; i < this.targets.length; i++) {
+            let tower = this.targets[i];
+
+            let dist = Vector3.distance(tower.transform.position, point)
+            if (dist < minDist) {
+                minDist = dist;
+                closest = i;
+            }
+        }
+
+        return this.targets[closest];
+    }
+
     update(delta, unscaledDelta) {
         super.update(delta, unscaledDelta);
 
         this.sin += delta;
 
-        this.physics.velocity.x = Math.sin(this.sin) * this.speed
-       // this.physics.velocity.z = Math.cos(this.sin) * this.speed
-
+        // this.physics.velocity.z = Math.cos(this.sin) * this.speed
         this.spriteSheet.play(this.getCardinalDirection(this.physics.velocity.x, this.physics.velocity.z))
+        
+        if(this.worldMap){
+            
+            this.positionNormal.x = this.transform.x / this.worldMap.dimensions.width
+            this.positionNormal.y = this.transform.z / this.worldMap.dimensions.height
+            
+            const target = this.findClosestTower(this.transform.position);
+            
+            const angle = Vector3.atan2XZ(target.transform.position, this.transform.position)
+            
+            this.physics.velocity.x = Math.cos(angle) * this.speed
+            this.physics.velocity.z = Math.sin(angle) * this.speed
+
+            
+            if(Vector3.distance(target.transform.position, this.transform.position) < 30){
+                this.destroy();
+            }
+        }
+        
         //console.log(Math.sin(this.physics.velocity.x))
     }
 

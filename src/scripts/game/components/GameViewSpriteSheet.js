@@ -18,10 +18,18 @@ export default class GameViewSpriteSheet extends BaseComponent {
         super.enable()
         this.stopTimer = 0;
         this.stopTimerDefault = 0.1;
+
+        
+      
+
     }
     destroy() {
         super.destroy();
         Pool.instance.returnElement(this.spriteSheet);
+        
+        if(this.spriteSheet){
+            this.spriteSheet.reset();
+        }
         this.spriteSheet = null;
     }
     setData(data) {
