@@ -1,0 +1,100 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "595",
+                    "name": "Joltik"
+                },
+                "description": [
+                    {
+                        "key": "Joltik that live in cities have learned a technique for sucking electricity from the outlets in houses.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "They attach themselves to large-bodied Pokémon and absorb static electricity, which they store in an electric pouch.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Attaching"
+                ],
+                "evolution": [
+                    {
+                        "key": "595,596",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Joltik",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "40",
+                                            "defense": "40",
+                                            "specAttack": " 40",
+                                            "specDefense": "40",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Bug,Electric"
+                                ],
+                                "abilities": [
+                                    "Compoundeyes,Unnerve"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fire",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.1"
+                                ],
+                                "weight": [
+                                    "0.6"
+                                ],
+                                "formatted-height": [
+                                    "0.1 m"
+                                ],
+                                "formatted-weight": [
+                                    "0.6 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

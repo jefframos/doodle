@@ -1,0 +1,106 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "627",
+                    "name": "Rufflet"
+                },
+                "description": [
+                    {
+                        "key": "They crush berries with their talons. They bravely stand up to any opponent, no matter how strong it is.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "They will challenge anything, even strong opponents, without fear. Their frequent fights help them become stronger.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male"
+                ],
+                "species": [
+                    "Eaglet"
+                ],
+                "evolution": [
+                    {
+                        "key": "627,628",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Rufflet",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "80",
+                                            "defense": "40",
+                                            "specAttack": " 40",
+                                            "specDefense": "40",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal,Flying"
+                                ],
+                                "abilities": [
+                                    "Keen Eye,Sheer Force"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Electric",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.5"
+                                ],
+                                "weight": [
+                                    "10.5"
+                                ],
+                                "formatted-height": [
+                                    "0.5 m"
+                                ],
+                                "formatted-weight": [
+                                    "10.5 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

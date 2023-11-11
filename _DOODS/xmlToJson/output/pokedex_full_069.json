@@ -1,0 +1,106 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "69",
+                    "name": "Bellsprout"
+                },
+                "description": [
+                    {
+                        "key": "It prefers hot and humid environments. It is quick at capturing prey with its vines.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Flower"
+                ],
+                "evolution": [
+                    {
+                        "key": "69,70,71",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Bellsprout",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "60",
+                                            "defense": "40",
+                                            "specAttack": " 60",
+                                            "specDefense": "20",
+                                            "speed": "40"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Grass,Poison"
+                                ],
+                                "abilities": [
+                                    "Chlorophyll"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fire",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Flying",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Psychic",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.7"
+                                ],
+                                "weight": [
+                                    "4.0"
+                                ],
+                                "formatted-height": [
+                                    "0.7 m"
+                                ],
+                                "formatted-weight": [
+                                    "4.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

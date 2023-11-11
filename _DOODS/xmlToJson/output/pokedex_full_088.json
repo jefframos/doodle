@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "88",
+                    "name": "Grimer"
+                },
+                "description": [
+                    {
+                        "key": "It was born when sludge in a dirty stream was exposed to the moon's X-rays. It appears among filth.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Sludge"
+                ],
+                "evolution": [
+                    {
+                        "key": "88,89",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Grimer",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "60",
+                                            "defense": "40",
+                                            "specAttack": " 40",
+                                            "specDefense": "40",
+                                            "speed": "20"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Poison"
+                                ],
+                                "abilities": [
+                                    "Stench,Sticky Hold"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Ground",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Psychic",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.9"
+                                ],
+                                "weight": [
+                                    "30.0"
+                                ],
+                                "formatted-height": [
+                                    "0.9 m"
+                                ],
+                                "formatted-weight": [
+                                    "30.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

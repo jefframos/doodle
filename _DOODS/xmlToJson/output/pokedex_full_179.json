@@ -1,0 +1,88 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "179",
+                    "name": "Mareep"
+                },
+                "description": [
+                    {
+                        "key": "Its fluffy coat swells to double when static electricity builds up. Touching it can be shocking.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Wool"
+                ],
+                "evolution": [
+                    {
+                        "key": "179,180,181",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Mareep",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "40",
+                                            "defense": "40",
+                                            "specAttack": " 60",
+                                            "specDefense": "40",
+                                            "speed": "40"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Electric"
+                                ],
+                                "abilities": [
+                                    "Static"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Ground",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.6"
+                                ],
+                                "weight": [
+                                    "7.8"
+                                ],
+                                "formatted-height": [
+                                    "0.6 m"
+                                ],
+                                "formatted-weight": [
+                                    "7.8 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

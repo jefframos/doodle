@@ -1,0 +1,88 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "446",
+                    "name": "Munchlax"
+                },
+                "description": [
+                    {
+                        "key": "In its desperation to gulp down food, it forgets about the food it has hidden under its fur.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Big Eater"
+                ],
+                "evolution": [
+                    {
+                        "key": "446,143",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Munchlax",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "100",
+                                            "attack": "80",
+                                            "defense": "40",
+                                            "specAttack": " 40",
+                                            "specDefense": "60",
+                                            "speed": "20"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal"
+                                ],
+                                "abilities": [
+                                    "Pickup,Thick Fat"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.6"
+                                ],
+                                "weight": [
+                                    "105.0"
+                                ],
+                                "formatted-height": [
+                                    "0.6 m"
+                                ],
+                                "formatted-weight": [
+                                    "105.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

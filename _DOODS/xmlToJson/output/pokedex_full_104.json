@@ -1,0 +1,100 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "104",
+                    "name": "Cubone"
+                },
+                "description": [
+                    {
+                        "key": "When it thinks of its dead mother, it cries. Its crying makes the skull it wears rattle hollowly.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Lonely"
+                ],
+                "evolution": [
+                    {
+                        "key": "104,105",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Cubone",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "40",
+                                            "defense": "80",
+                                            "specAttack": " 40",
+                                            "specDefense": "40",
+                                            "speed": "40"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Ground"
+                                ],
+                                "abilities": [
+                                    "Lightningrod,Rock Head"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Grass",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Water",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.4"
+                                ],
+                                "weight": [
+                                    "6.5"
+                                ],
+                                "formatted-height": [
+                                    "0.4 m"
+                                ],
+                                "formatted-weight": [
+                                    "6.5 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

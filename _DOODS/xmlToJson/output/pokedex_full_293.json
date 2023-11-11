@@ -1,0 +1,88 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "293",
+                    "name": "Whismur"
+                },
+                "description": [
+                    {
+                        "key": "Usually, its cries are like quiet murmurs. If frightened, it shrieks at the same volume as a jet plane.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Whisper"
+                ],
+                "evolution": [
+                    {
+                        "key": "293,294,295",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Whismur",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "40",
+                                            "defense": "20",
+                                            "specAttack": " 40",
+                                            "specDefense": "20",
+                                            "speed": "20"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal"
+                                ],
+                                "abilities": [
+                                    "Soundproof"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.6"
+                                ],
+                                "weight": [
+                                    "16.3"
+                                ],
+                                "formatted-height": [
+                                    "0.6 m"
+                                ],
+                                "formatted-weight": [
+                                    "16.3 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "423",
+                    "name": "Gastrodon"
+                },
+                "description": [
+                    {
+                        "key": "Long ago, its entire back was shielded with a sturdy shell. There are traces of it left in its cells.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Sea Slug"
+                ],
+                "evolution": [
+                    {
+                        "key": "422,423",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Gastrodon",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "80",
+                                            "attack": "80",
+                                            "defense": "60",
+                                            "specAttack": " 80",
+                                            "specDefense": "60",
+                                            "speed": "40"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Water,Ground"
+                                ],
+                                "abilities": [
+                                    "Sticky Hold,Storm Drain"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Grass",
+                                            "mod": "1"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.9"
+                                ],
+                                "weight": [
+                                    "29.9"
+                                ],
+                                "formatted-height": [
+                                    "0.9 m"
+                                ],
+                                "formatted-weight": [
+                                    "29.9 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "530",
+                    "name": "Excadrill"
+                },
+                "description": [
+                    {
+                        "key": "It can help in tunnel construction. Its drill has evolved into steel strong enough to bore through iron plates.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "More than 300 feet below the surface, they build mazelike nests. Their activity can be destructive to subway tunnels.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Subterrene"
+                ],
+                "evolution": [
+                    {
+                        "key": "529,530",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Excadrill Pokémon",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "80",
+                                            "attack": "120",
+                                            "defense": "40",
+                                            "specAttack": " 40",
+                                            "specDefense": "40",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Ground,Steel"
+                                ],
+                                "abilities": [
+                                    "Sand Force,Sand Rush"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fire",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Water",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ground",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.7"
+                                ],
+                                "weight": [
+                                    "40.4"
+                                ],
+                                "formatted-height": [
+                                    "0.7 m"
+                                ],
+                                "formatted-weight": [
+                                    "40.4 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

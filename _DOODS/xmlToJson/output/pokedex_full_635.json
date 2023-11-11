@@ -1,0 +1,112 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "635",
+                    "name": "Hydreigon"
+                },
+                "description": [
+                    {
+                        "key": "This brutal Pokémon travels the skies on its six wings. Anything that moves seems like a foe to it, triggering its attack.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "The heads on their arms do not have brains. They use all three heads to consume and destroy everything.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Brutal"
+                ],
+                "evolution": [
+                    {
+                        "key": "633,634,635",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "2"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Hydreigon Pokémon",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "80",
+                                            "attack": "80",
+                                            "defense": "80",
+                                            "specAttack": " 100",
+                                            "specDefense": "80",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Dark,Dragon"
+                                ],
+                                "abilities": [
+                                    "Levitate"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Bug",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Dragon",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.8"
+                                ],
+                                "weight": [
+                                    "160.0"
+                                ],
+                                "formatted-height": [
+                                    "1.8 m"
+                                ],
+                                "formatted-weight": [
+                                    "160.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

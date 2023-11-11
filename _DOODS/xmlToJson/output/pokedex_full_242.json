@@ -1,0 +1,88 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "242",
+                    "name": "Blissey"
+                },
+                "description": [
+                    {
+                        "key": "The eggs it lays are filled with happiness. Eating even one bite will bring a smile to anyone.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Female"
+                ],
+                "species": [
+                    "Happiness"
+                ],
+                "evolution": [
+                    {
+                        "key": "440,113,242",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "2"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Blissey",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "120",
+                                            "attack": "20",
+                                            "defense": "20",
+                                            "specAttack": " 60",
+                                            "specDefense": "120",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal"
+                                ],
+                                "abilities": [
+                                    "Natural Cure,Serene Grace"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.5"
+                                ],
+                                "weight": [
+                                    "46.8"
+                                ],
+                                "formatted-height": [
+                                    "1.5 m"
+                                ],
+                                "formatted-weight": [
+                                    "46.8 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

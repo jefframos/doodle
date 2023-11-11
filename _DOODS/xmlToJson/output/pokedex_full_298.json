@@ -1,0 +1,88 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "298",
+                    "name": "Azurill"
+                },
+                "description": [
+                    {
+                        "key": "Its tail bounces like a rubber ball. It flings that tail around to fight opponents bigger than itself.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Polka Dot"
+                ],
+                "evolution": [
+                    {
+                        "key": "298,183,184",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Azurill",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "20",
+                                            "defense": "40",
+                                            "specAttack": " 20",
+                                            "specDefense": "20",
+                                            "speed": "20"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal"
+                                ],
+                                "abilities": [
+                                    "Huge Power,Thick Fat"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.2"
+                                ],
+                                "weight": [
+                                    "2.0"
+                                ],
+                                "formatted-height": [
+                                    "0.2 m"
+                                ],
+                                "formatted-weight": [
+                                    "2.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

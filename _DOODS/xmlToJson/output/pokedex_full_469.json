@@ -1,0 +1,112 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "469",
+                    "name": "Yanmega"
+                },
+                "description": [
+                    {
+                        "key": "Its jaw power is incredible. It is adept at biting apart foes while flying by at high speed.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Ogre Darner"
+                ],
+                "evolution": [
+                    {
+                        "key": "193,469",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Yanmega",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "60",
+                                            "defense": "60",
+                                            "specAttack": " 100",
+                                            "specDefense": "40",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Bug,Flying"
+                                ],
+                                "abilities": [
+                                    "Speed Boost,Tinted Lens"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "1"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Electric",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Fire",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Flying",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.9"
+                                ],
+                                "weight": [
+                                    "51.5"
+                                ],
+                                "formatted-height": [
+                                    "1.9 m"
+                                ],
+                                "formatted-weight": [
+                                    "51.5 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

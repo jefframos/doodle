@@ -1,0 +1,88 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "181",
+                    "name": "Ampharos"
+                },
+                "description": [
+                    {
+                        "key": "The tip of its tail shines brightly. In the olden days, people sent signals using the tail's light.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Light"
+                ],
+                "evolution": [
+                    {
+                        "key": "179,180,181",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "2"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Ampharos",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "60",
+                                            "defense": "60",
+                                            "specAttack": " 100",
+                                            "specDefense": "80",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Electric"
+                                ],
+                                "abilities": [
+                                    "Static"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Ground",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.4"
+                                ],
+                                "weight": [
+                                    "61.5"
+                                ],
+                                "formatted-height": [
+                                    "1.4 m"
+                                ],
+                                "formatted-weight": [
+                                    "61.5 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

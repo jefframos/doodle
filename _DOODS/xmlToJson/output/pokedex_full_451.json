@@ -1,0 +1,106 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "451",
+                    "name": "Skorupi"
+                },
+                "description": [
+                    {
+                        "key": "As soon as the tail claws close, its needle tips secrete poison. It can survive a year without food.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Scorpion"
+                ],
+                "evolution": [
+                    {
+                        "key": "451,452",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Skorupi",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "20",
+                                            "attack": "40",
+                                            "defense": "80",
+                                            "specAttack": " 20",
+                                            "specDefense": "40",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Poison,Bug"
+                                ],
+                                "abilities": [
+                                    "Battle Armor,Sniper"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fire",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Flying",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Psychic",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.8"
+                                ],
+                                "weight": [
+                                    "12.0"
+                                ],
+                                "formatted-height": [
+                                    "0.8 m"
+                                ],
+                                "formatted-weight": [
+                                    "12.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

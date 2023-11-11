@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "366",
+                    "name": "Clamperl"
+                },
+                "description": [
+                    {
+                        "key": "It makes a single pearl during its lifetime. The pearl is said to amplify psychic power.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Bivalve"
+                ],
+                "evolution": [
+                    {
+                        "key": "366,367,368",
+                        "attribute": {
+                            "pattern": "3",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Clamperl",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "20",
+                                            "attack": "60",
+                                            "defense": "60",
+                                            "specAttack": " 60",
+                                            "specDefense": "40",
+                                            "speed": "20"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Water"
+                                ],
+                                "abilities": [
+                                    "Shell Armor"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Electric",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Grass",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.4"
+                                ],
+                                "weight": [
+                                    "52.5"
+                                ],
+                                "formatted-height": [
+                                    "0.4 m"
+                                ],
+                                "formatted-weight": [
+                                    "52.5 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

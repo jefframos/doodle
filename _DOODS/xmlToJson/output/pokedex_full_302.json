@@ -1,0 +1,80 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "302",
+                    "name": "Sableye"
+                },
+                "description": [
+                    {
+                        "key": "It hides in the darkness of caves. Its diet of gems has transformed its eyes into gemstones.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Darkness"
+                ],
+                "evolution": [
+                    {
+                        "key": "302",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Sableye",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "60",
+                                            "defense": "60",
+                                            "specAttack": " 60",
+                                            "specDefense": "40",
+                                            "speed": "40"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Dark,Ghost"
+                                ],
+                                "abilities": [
+                                    "Keen Eye,Stall"
+                                ],
+                                "height": [
+                                    "0.5"
+                                ],
+                                "weight": [
+                                    "11.0"
+                                ],
+                                "formatted-height": [
+                                    "0.5 m"
+                                ],
+                                "formatted-weight": [
+                                    "11.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

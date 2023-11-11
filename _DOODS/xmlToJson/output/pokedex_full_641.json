@@ -1,0 +1,165 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "641",
+                    "name": "Tornadus"
+                },
+                "description": [
+                    {
+                        "key": "The lower half of its body is wrapped in a cloud of energy. It zooms through the sky at 200 mph.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "Tornadus expels massive energy from its tail, causing severe storms. Its power is great enough to blow houses away.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male"
+                ],
+                "species": [
+                    "Cyclone"
+                ],
+                "evolution": [
+                    {
+                        "key": "641",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "INCARNATE FORME",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "100",
+                                            "defense": "60",
+                                            "specAttack": " 100",
+                                            "specDefense": "60",
+                                            "speed": "100"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Flying"
+                                ],
+                                "abilities": [
+                                    "Prankster"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Electric",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.5"
+                                ],
+                                "weight": [
+                                    "63.0"
+                                ],
+                                "formatted-height": [
+                                    "1.5 m"
+                                ],
+                                "formatted-weight": [
+                                    "63.0 kg"
+                                ]
+                            },
+                            {
+                                "attribute": {
+                                    "name": "Therian Forme",
+                                    "index": "1"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "100",
+                                            "defense": "60",
+                                            "specAttack": " 120",
+                                            "specDefense": "60",
+                                            "speed": "100"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Flying"
+                                ],
+                                "abilities": [
+                                    "Regenerator"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Electric",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.4"
+                                ],
+                                "weight": [
+                                    "63.0"
+                                ],
+                                "formatted-height": [
+                                    "1.4 m"
+                                ],
+                                "formatted-weight": [
+                                    "63.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

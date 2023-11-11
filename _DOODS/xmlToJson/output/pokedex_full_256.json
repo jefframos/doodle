@@ -1,0 +1,106 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "256",
+                    "name": "Combusken"
+                },
+                "description": [
+                    {
+                        "key": "Its kicking mastery lets it loose 10 kicks per second. It emits sharp cries to intimidate foes.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Young Fowl"
+                ],
+                "evolution": [
+                    {
+                        "key": "255,256,257",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Combusken",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "80",
+                                            "defense": "40",
+                                            "specAttack": " 80",
+                                            "specDefense": "40",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Fire,Fighting"
+                                ],
+                                "abilities": [
+                                    "Blaze"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Flying",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ground",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Psychic",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Water",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.9"
+                                ],
+                                "weight": [
+                                    "19.5"
+                                ],
+                                "formatted-height": [
+                                    "0.9 m"
+                                ],
+                                "formatted-weight": [
+                                    "19.5 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

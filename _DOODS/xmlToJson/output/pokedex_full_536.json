@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "536",
+                    "name": "Palpitoad"
+                },
+                "description": [
+                    {
+                        "key": "When they vibrate the bumps on their heads, they can make waves in water or earthquake-like vibrations on land.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "It lives in the water and on land. It uses its long, sticky tongue to capture prey.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Vibration"
+                ],
+                "evolution": [
+                    {
+                        "key": "535,536,537",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Palpitoad",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "60",
+                                            "defense": "40",
+                                            "specAttack": " 60",
+                                            "specDefense": "40",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Water,Ground"
+                                ],
+                                "abilities": [
+                                    "Hydration,Swift Swim"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Grass",
+                                            "mod": "1"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.8"
+                                ],
+                                "weight": [
+                                    "17.0"
+                                ],
+                                "formatted-height": [
+                                    "0.8 m"
+                                ],
+                                "formatted-weight": [
+                                    "17.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,118 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "75",
+                    "name": "Graveler"
+                },
+                "description": [
+                    {
+                        "key": "It rolls on mountain paths to move. Once it builds momentum, no Pokémon can stop it without difficulty.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Rock"
+                ],
+                "evolution": [
+                    {
+                        "key": "74,75,76",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Graveler",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "80",
+                                            "defense": "100",
+                                            "specAttack": " 40",
+                                            "specDefense": "40",
+                                            "speed": "40"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Rock,Ground"
+                                ],
+                                "abilities": [
+                                    "Rock Head,Sturdy"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Grass",
+                                            "mod": "1"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Water",
+                                            "mod": "1"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ground",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Steel",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.0"
+                                ],
+                                "weight": [
+                                    "105.0"
+                                ],
+                                "formatted-height": [
+                                    "1.0 m"
+                                ],
+                                "formatted-weight": [
+                                    "105.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

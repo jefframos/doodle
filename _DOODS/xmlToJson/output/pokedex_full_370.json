@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "370",
+                    "name": "Luvdisc"
+                },
+                "description": [
+                    {
+                        "key": "It lives in warm seas. It is said that a couple finding this Pokémon will be blessed with eternal love.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Rendezvous"
+                ],
+                "evolution": [
+                    {
+                        "key": "370",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Luvdisc",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "20",
+                                            "defense": "40",
+                                            "specAttack": " 40",
+                                            "specDefense": "40",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Water"
+                                ],
+                                "abilities": [
+                                    "Swift Swim"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Electric",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Grass",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.6"
+                                ],
+                                "weight": [
+                                    "8.7"
+                                ],
+                                "formatted-height": [
+                                    "0.6 m"
+                                ],
+                                "formatted-weight": [
+                                    "8.7 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

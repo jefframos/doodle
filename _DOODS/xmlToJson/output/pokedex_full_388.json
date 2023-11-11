@@ -1,0 +1,112 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "388",
+                    "name": "Grotle"
+                },
+                "description": [
+                    {
+                        "key": "It knows where pure water wells up. It carries fellow Pokémon there on its back.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Grove"
+                ],
+                "evolution": [
+                    {
+                        "key": "387,388,389",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Grotle",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "80",
+                                            "defense": "60",
+                                            "specAttack": " 40",
+                                            "specDefense": "40",
+                                            "speed": "40"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Grass"
+                                ],
+                                "abilities": [
+                                    "Overgrow"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Bug",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Fire",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Flying",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Poison",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.1"
+                                ],
+                                "weight": [
+                                    "97.0"
+                                ],
+                                "formatted-height": [
+                                    "1.1 m"
+                                ],
+                                "formatted-weight": [
+                                    "97.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

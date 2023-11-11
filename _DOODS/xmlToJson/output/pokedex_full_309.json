@@ -1,0 +1,88 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "309",
+                    "name": "Electrike"
+                },
+                "description": [
+                    {
+                        "key": "Using electricity stored in its fur, it stimulates its muscles to heighten its reaction speed.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Lightning"
+                ],
+                "evolution": [
+                    {
+                        "key": "309,310",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Electrike",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "20",
+                                            "attack": "40",
+                                            "defense": "40",
+                                            "specAttack": " 60",
+                                            "specDefense": "20",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Electric"
+                                ],
+                                "abilities": [
+                                    "Lightningrod,Static"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Ground",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.6"
+                                ],
+                                "weight": [
+                                    "15.2"
+                                ],
+                                "formatted-height": [
+                                    "0.6 m"
+                                ],
+                                "formatted-weight": [
+                                    "15.2 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "415",
+                    "name": "Combee"
+                },
+                "description": [
+                    {
+                        "key": "The trio is together from birth. It constantly gathers honey from flowers to please Vespiquen.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Tiny Bee"
+                ],
+                "evolution": [
+                    {
+                        "key": "415,416",
+                        "attribute": {
+                            "pattern": "10",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Combee",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "20",
+                                            "attack": "20",
+                                            "defense": "40",
+                                            "specAttack": " 20",
+                                            "specDefense": "40",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Bug,Flying"
+                                ],
+                                "abilities": [
+                                    "Honey Gather"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "1"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Electric",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Fire",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Flying",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.3"
+                                ],
+                                "weight": [
+                                    "5.5"
+                                ],
+                                "formatted-height": [
+                                    "0.3 m"
+                                ],
+                                "formatted-weight": [
+                                    "5.5 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

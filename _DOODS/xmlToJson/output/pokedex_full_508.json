@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "508",
+                    "name": "Stoutland"
+                },
+                "description": [
+                    {
+                        "key": "It rescues people stranded by blizzards in the mountains. Its shaggy fur shields it from the cold.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "This extremely wise Pokémon excels at rescuing people stranded at sea or in the mountains.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Big-Hearted"
+                ],
+                "evolution": [
+                    {
+                        "key": "506,507,508",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "2"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Stoutland",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "80",
+                                            "defense": "80",
+                                            "specAttack": " 40",
+                                            "specDefense": "80",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal"
+                                ],
+                                "abilities": [
+                                    "Intimidate,Sand Rush"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.2"
+                                ],
+                                "weight": [
+                                    "61.0"
+                                ],
+                                "formatted-height": [
+                                    "1.2 m"
+                                ],
+                                "formatted-weight": [
+                                    "61.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

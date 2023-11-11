@@ -39,6 +39,18 @@ export default class GameViewSpriteSheet extends BaseComponent {
 
         this.view.texture = PIXI.Texture.from(this.spriteSheet.currentFrame)
     }
+    addAnimation(id, frames, speed, anchor = { x: 0.5, y: 0.5 }) {
+        if (!this.spriteSheet) {
+            this.spriteSheet = Pool.instance.getElement(SpriteSheetAnimation)
+            this.view = this.gameObject.gameView.view;
+        }
+        this.spriteSheet.addFrames(id, frames, speed, anchor);
+        //this.view.texture = PIXI.Texture.from(this.spriteSheet.currentFrame)
+
+    }
+    play(id){
+        this.spriteSheet.play(id)
+    }
     update(delta) {
         if (!this.spriteSheet) {
             return;
@@ -47,18 +59,7 @@ export default class GameViewSpriteSheet extends BaseComponent {
         if (this.spriteSheet.currentFrame) {
             this.view.texture = PIXI.Texture.from(this.spriteSheet.currentFrame)
             this.view.anchor = this.spriteSheet.anchor;
-        }
-        if (this.gameObject.physics.magnitude > 0.1 || this.alwaysWalking) {
-            this.spriteSheet.play(GameViewSpriteSheet.AnimationType.Running)
-            this.stopTimer = this.stopTimerDefault
-        } else {
-
-            if (this.stopTimer <= 0) {
-                this.spriteSheet.play(GameViewSpriteSheet.AnimationType.Idle)
-            } else {
-                this.stopTimer -= delta;
-            }
-        }
+        }        
 
     }
 }

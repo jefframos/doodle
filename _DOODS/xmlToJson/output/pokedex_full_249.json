@@ -1,0 +1,112 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "249",
+                    "name": "Lugia"
+                },
+                "description": [
+                    {
+                        "key": "It sleeps in a deep-sea trench. If it flaps its wings, it is said to cause a 40-day storm.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    ""
+                ],
+                "species": [
+                    "Diving"
+                ],
+                "evolution": [
+                    {
+                        "key": "249",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Lugia",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "80",
+                                            "attack": "80",
+                                            "defense": "100",
+                                            "specAttack": " 80",
+                                            "specDefense": "120",
+                                            "speed": "100"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Psychic,Flying"
+                                ],
+                                "abilities": [
+                                    "Pressure"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Dark",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Electric",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ghost",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "5.2"
+                                ],
+                                "weight": [
+                                    "216.0"
+                                ],
+                                "formatted-height": [
+                                    "5.2 m"
+                                ],
+                                "formatted-weight": [
+                                    "216.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "89",
+                    "name": "Muk"
+                },
+                "description": [
+                    {
+                        "key": "A toxic fluid seeps from its body. The fluid instantly kills plants and trees on contact.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Sludge"
+                ],
+                "evolution": [
+                    {
+                        "key": "88,89",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Muk",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "80",
+                                            "attack": "80",
+                                            "defense": "60",
+                                            "specAttack": " 60",
+                                            "specDefense": "80",
+                                            "speed": "40"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Poison"
+                                ],
+                                "abilities": [
+                                    "Stench,Sticky Hold"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Ground",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Psychic",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.2"
+                                ],
+                                "weight": [
+                                    "30.0"
+                                ],
+                                "formatted-height": [
+                                    "1.2 m"
+                                ],
+                                "formatted-weight": [
+                                    "30.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

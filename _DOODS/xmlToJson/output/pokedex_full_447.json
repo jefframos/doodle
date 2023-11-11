@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "447",
+                    "name": "Riolu"
+                },
+                "description": [
+                    {
+                        "key": "It has the peculiar power of being able to see emotions such as joy and rage in the form of waves.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Emanation"
+                ],
+                "evolution": [
+                    {
+                        "key": "447,448",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Riolu",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "20",
+                                            "attack": "60",
+                                            "defense": "40",
+                                            "specAttack": " 20",
+                                            "specDefense": "20",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Fighting"
+                                ],
+                                "abilities": [
+                                    "Inner Focus,Steadfast"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Flying",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Psychic",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.7"
+                                ],
+                                "weight": [
+                                    "20.2"
+                                ],
+                                "formatted-height": [
+                                    "0.7 m"
+                                ],
+                                "formatted-weight": [
+                                    "20.2 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "289",
+                    "name": "Slaking"
+                },
+                "description": [
+                    {
+                        "key": "The world's laziest Pokémon. When it is lounging, it is actually saving energy for striking back.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Lazy"
+                ],
+                "evolution": [
+                    {
+                        "key": "287,288,289",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "2"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Slaking",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "120",
+                                            "attack": "120",
+                                            "defense": "80",
+                                            "specAttack": " 80",
+                                            "specDefense": "40",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal"
+                                ],
+                                "abilities": [
+                                    "Truant"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "2.0"
+                                ],
+                                "weight": [
+                                    "130.5"
+                                ],
+                                "formatted-height": [
+                                    "2.0 m"
+                                ],
+                                "formatted-weight": [
+                                    "130.5 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

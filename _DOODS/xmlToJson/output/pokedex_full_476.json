@@ -1,0 +1,100 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "476",
+                    "name": "Probopass"
+                },
+                "description": [
+                    {
+                        "key": "It freely controls three small units called Mini-Noses using magnetic force.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Compass"
+                ],
+                "evolution": [
+                    {
+                        "key": "299,476",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Probopass",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "40",
+                                            "defense": "120",
+                                            "specAttack": " 60",
+                                            "specDefense": "120",
+                                            "speed": "40"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Rock,Steel"
+                                ],
+                                "abilities": [
+                                    "Magnet Pull,Sturdy"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "1"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ground",
+                                            "mod": "1"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Water",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.4"
+                                ],
+                                "weight": [
+                                    "340.0"
+                                ],
+                                "formatted-height": [
+                                    "1.4 m"
+                                ],
+                                "formatted-weight": [
+                                    "340.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

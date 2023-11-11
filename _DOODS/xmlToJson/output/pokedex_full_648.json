@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "648",
+                    "name": "Meloetta"
+                },
+                "description": [
+                    {
+                        "key": "The melodies sung by Meloetta have the power to make Pokémon that hear them happy or sad.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    ""
+                ],
+                "species": [
+                    "Melody"
+                ],
+                "evolution": [
+                    {
+                        "key": "648",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Aria Forme",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "60",
+                                            "defense": "40",
+                                            "specAttack": " 120",
+                                            "specDefense": "100",
+                                            "speed": "100"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal,Psychic"
+                                ],
+                                "abilities": [
+                                    "Serene Grace"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Bug",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Dark",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.6"
+                                ],
+                                "weight": [
+                                    "6.5"
+                                ],
+                                "formatted-height": [
+                                    "0.6 m"
+                                ],
+                                "formatted-weight": [
+                                    "6.5 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

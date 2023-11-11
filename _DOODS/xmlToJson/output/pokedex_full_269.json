@@ -1,0 +1,106 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "269",
+                    "name": "Dustox"
+                },
+                "description": [
+                    {
+                        "key": "Toxic powder is scattered with each flap. At night, it is known to strip leaves off trees lining boulevards.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Poison Moth"
+                ],
+                "evolution": [
+                    {
+                        "key": "265,266,267,268,269",
+                        "attribute": {
+                            "pattern": "7",
+                            "position": "4"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Dustox",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "40",
+                                            "defense": "60",
+                                            "specAttack": " 40",
+                                            "specDefense": "80",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Bug,Poison"
+                                ],
+                                "abilities": [
+                                    "Shield Dust"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fire",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Flying",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Psychic",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.2"
+                                ],
+                                "weight": [
+                                    "31.6"
+                                ],
+                                "formatted-height": [
+                                    "1.2 m"
+                                ],
+                                "formatted-weight": [
+                                    "31.6 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

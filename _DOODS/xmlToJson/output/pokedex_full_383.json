@@ -1,0 +1,100 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "383",
+                    "name": "Groudon"
+                },
+                "description": [
+                    {
+                        "key": "It had been asleep in underground magma ever since it fiercely fought Kyogre long ago.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    ""
+                ],
+                "species": [
+                    "Continent"
+                ],
+                "evolution": [
+                    {
+                        "key": "383",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Groudon",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "80",
+                                            "attack": "120",
+                                            "defense": "100",
+                                            "specAttack": " 80",
+                                            "specDefense": "80",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Ground"
+                                ],
+                                "abilities": [
+                                    "Drought"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Grass",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Water",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "3.5"
+                                ],
+                                "weight": [
+                                    "950.0"
+                                ],
+                                "formatted-height": [
+                                    "3.5 m"
+                                ],
+                                "formatted-weight": [
+                                    "950.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

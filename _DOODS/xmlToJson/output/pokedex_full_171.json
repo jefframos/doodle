@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "171",
+                    "name": "Lanturn"
+                },
+                "description": [
+                    {
+                        "key": "Lanturn's light can shine up from great depths. It is nicknamed \"The Deep-Sea Star.\"",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Light"
+                ],
+                "evolution": [
+                    {
+                        "key": "170,171",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Lanturn",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "100",
+                                            "attack": "40",
+                                            "defense": "40",
+                                            "specAttack": " 60",
+                                            "specDefense": "60",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Water,Electric"
+                                ],
+                                "abilities": [
+                                    "Illuminate,Volt Absorb"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Grass",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ground",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.2"
+                                ],
+                                "weight": [
+                                    "22.5"
+                                ],
+                                "formatted-height": [
+                                    "1.2 m"
+                                ],
+                                "formatted-weight": [
+                                    "22.5 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

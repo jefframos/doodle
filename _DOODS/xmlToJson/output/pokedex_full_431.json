@@ -1,0 +1,88 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "431",
+                    "name": "Glameow"
+                },
+                "description": [
+                    {
+                        "key": "It hides its spiteful tendency of hooking its claws into the nose of its Trainer if it isn't fed.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Catty"
+                ],
+                "evolution": [
+                    {
+                        "key": "431,432",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Glameow",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "40",
+                                            "defense": "40",
+                                            "specAttack": " 40",
+                                            "specDefense": "20",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal"
+                                ],
+                                "abilities": [
+                                    "Limber,Own Tempo"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.5"
+                                ],
+                                "weight": [
+                                    "3.9"
+                                ],
+                                "formatted-height": [
+                                    "0.5 m"
+                                ],
+                                "formatted-weight": [
+                                    "3.9 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

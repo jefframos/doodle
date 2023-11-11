@@ -1,0 +1,106 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "34",
+                    "name": "Nidoking"
+                },
+                "description": [
+                    {
+                        "key": "One swing of its mighty tail can snap a telephone pole as if it were a matchstick.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male"
+                ],
+                "species": [
+                    "Drill"
+                ],
+                "evolution": [
+                    {
+                        "key": "32,33,34",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "2"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Nidoking",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "80",
+                                            "defense": "60",
+                                            "specAttack": " 80",
+                                            "specDefense": "60",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Poison,Ground"
+                                ],
+                                "abilities": [
+                                    "Poison Point,Rivalry"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Ground",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Psychic",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Water",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.4"
+                                ],
+                                "weight": [
+                                    "62.0"
+                                ],
+                                "formatted-height": [
+                                    "1.4 m"
+                                ],
+                                "formatted-weight": [
+                                    "62.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

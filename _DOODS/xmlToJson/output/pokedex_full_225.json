@@ -1,0 +1,106 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "225",
+                    "name": "Delibird"
+                },
+                "description": [
+                    {
+                        "key": "It carries food rolled up in its tail. It has the habit of sharing food with people lost in mountains.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Delivery"
+                ],
+                "evolution": [
+                    {
+                        "key": "225",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Delibird",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "40",
+                                            "defense": "40",
+                                            "specAttack": " 60",
+                                            "specDefense": "40",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Ice,Flying"
+                                ],
+                                "abilities": [
+                                    "Hustle,Vital Spirit"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "1"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Electric",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Fire",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Steel",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.9"
+                                ],
+                                "weight": [
+                                    "16.0"
+                                ],
+                                "formatted-height": [
+                                    "0.9 m"
+                                ],
+                                "formatted-weight": [
+                                    "16.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

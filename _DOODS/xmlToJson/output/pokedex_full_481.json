@@ -1,0 +1,100 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "481",
+                    "name": "Mesprit"
+                },
+                "description": [
+                    {
+                        "key": "When Mesprit flew, people learned the joy and sadness of living. It was the birth of emotions.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    ""
+                ],
+                "species": [
+                    "Emotion"
+                ],
+                "evolution": [
+                    {
+                        "key": "481",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Mesprit",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "80",
+                                            "defense": "80",
+                                            "specAttack": " 100",
+                                            "specDefense": "80",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Psychic"
+                                ],
+                                "abilities": [
+                                    "Levitate"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Bug",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Dark",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ghost",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.3"
+                                ],
+                                "weight": [
+                                    "0.3"
+                                ],
+                                "formatted-height": [
+                                    "0.3 m"
+                                ],
+                                "formatted-weight": [
+                                    "0.3 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,100 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "127",
+                    "name": "Pinsir"
+                },
+                "description": [
+                    {
+                        "key": "It grips prey with its pincers until the prey is torn in half. What it can't tear, it tosses far.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Stag Beetle"
+                ],
+                "evolution": [
+                    {
+                        "key": "127",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Pinsir",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "100",
+                                            "defense": "80",
+                                            "specAttack": " 40",
+                                            "specDefense": "60",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Bug"
+                                ],
+                                "abilities": [
+                                    "Hyper Cutter,Mold Breaker"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fire",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Flying",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.5"
+                                ],
+                                "weight": [
+                                    "55.0"
+                                ],
+                                "formatted-height": [
+                                    "1.5 m"
+                                ],
+                                "formatted-weight": [
+                                    "55.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

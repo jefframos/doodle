@@ -1,0 +1,106 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "131",
+                    "name": "Lapras"
+                },
+                "description": [
+                    {
+                        "key": "It loves crossing the sea with people and Pokémon on its back. It understands human speech.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Transport"
+                ],
+                "evolution": [
+                    {
+                        "key": "131",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Lapras",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "100",
+                                            "attack": "80",
+                                            "defense": "60",
+                                            "specAttack": " 80",
+                                            "specDefense": "80",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Water,Ice"
+                                ],
+                                "abilities": [
+                                    "Shell Armor,Water Absorb"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Electric",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Grass",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "2.5"
+                                ],
+                                "weight": [
+                                    "220.0"
+                                ],
+                                "formatted-height": [
+                                    "2.5 m"
+                                ],
+                                "formatted-weight": [
+                                    "220.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

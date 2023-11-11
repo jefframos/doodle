@@ -1,0 +1,100 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "620",
+                    "name": "Mienshao"
+                },
+                "description": [
+                    {
+                        "key": "It wields the fur on its arms like a whip. Its arm attacks come with such rapidity that they cannot even be seen.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "They use the long fur on their arms as a whip to strike their opponents.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Martial Arts"
+                ],
+                "evolution": [
+                    {
+                        "key": "619,620",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Mienshao",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "100",
+                                            "defense": "40",
+                                            "specAttack": " 80",
+                                            "specDefense": "40",
+                                            "speed": "100"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Fighting"
+                                ],
+                                "abilities": [
+                                    "Inner Focus,Regenerator"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Flying",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Psychic",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.4"
+                                ],
+                                "weight": [
+                                    "35.5"
+                                ],
+                                "formatted-height": [
+                                    "1.4 m"
+                                ],
+                                "formatted-weight": [
+                                    "35.5 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

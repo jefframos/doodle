@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "56",
+                    "name": "Mankey"
+                },
+                "description": [
+                    {
+                        "key": "It lives in treetop colonies. If one becomes enraged, the whole colony rampages for no reason.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Pig Monkey"
+                ],
+                "evolution": [
+                    {
+                        "key": "56,57",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Mankey",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "20",
+                                            "attack": "60",
+                                            "defense": "40",
+                                            "specAttack": " 20",
+                                            "specDefense": "40",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Fighting"
+                                ],
+                                "abilities": [
+                                    "Anger Point,Vital Spirit"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Flying",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Psychic",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.5"
+                                ],
+                                "weight": [
+                                    "28.0"
+                                ],
+                                "formatted-height": [
+                                    "0.5 m"
+                                ],
+                                "formatted-weight": [
+                                    "28.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

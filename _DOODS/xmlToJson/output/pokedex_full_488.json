@@ -1,0 +1,100 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "488",
+                    "name": "Cresselia"
+                },
+                "description": [
+                    {
+                        "key": "On nights around the quarter moon, the aurora from its tail extends and undulates beautifully.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Female"
+                ],
+                "species": [
+                    "Lunar"
+                ],
+                "evolution": [
+                    {
+                        "key": "488",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Cresselia",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "100",
+                                            "attack": "60",
+                                            "defense": "100",
+                                            "specAttack": " 60",
+                                            "specDefense": "100",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Psychic"
+                                ],
+                                "abilities": [
+                                    "Levitate"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Bug",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Dark",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ghost",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.5"
+                                ],
+                                "weight": [
+                                    "85.6"
+                                ],
+                                "formatted-height": [
+                                    "1.5 m"
+                                ],
+                                "formatted-weight": [
+                                    "85.6 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

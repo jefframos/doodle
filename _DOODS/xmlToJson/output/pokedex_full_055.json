@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "55",
+                    "name": "Golduck"
+                },
+                "description": [
+                    {
+                        "key": "It is seen swimming dynamically and elegantly using its well-developed limbs and flippers.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Duck"
+                ],
+                "evolution": [
+                    {
+                        "key": "54,55",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Golduck",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "60",
+                                            "defense": "60",
+                                            "specAttack": " 80",
+                                            "specDefense": "60",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Water"
+                                ],
+                                "abilities": [
+                                    "Cloud Nine,Damp"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Electric",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Grass",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.7"
+                                ],
+                                "weight": [
+                                    "76.6"
+                                ],
+                                "formatted-height": [
+                                    "1.7 m"
+                                ],
+                                "formatted-weight": [
+                                    "76.6 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

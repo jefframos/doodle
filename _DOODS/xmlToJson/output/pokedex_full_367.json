@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "367",
+                    "name": "Huntail"
+                },
+                "description": [
+                    {
+                        "key": "It lives deep in the sea. With a tail shaped like a small fish, it attracts unsuspecting prey.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Deep Sea"
+                ],
+                "evolution": [
+                    {
+                        "key": "366,367,368",
+                        "attribute": {
+                            "pattern": "3",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Huntail",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "80",
+                                            "defense": "80",
+                                            "specAttack": " 80",
+                                            "specDefense": "60",
+                                            "speed": "40"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Water"
+                                ],
+                                "abilities": [
+                                    "Swift Swim"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Electric",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Grass",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.7"
+                                ],
+                                "weight": [
+                                    "27.0"
+                                ],
+                                "formatted-height": [
+                                    "1.7 m"
+                                ],
+                                "formatted-weight": [
+                                    "27.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

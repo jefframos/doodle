@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "429",
+                    "name": "Mismagius"
+                },
+                "description": [
+                    {
+                        "key": "Its cry sounds like an incantation. It is said the cry may rarely be imbued with happiness-giving power.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Magical"
+                ],
+                "evolution": [
+                    {
+                        "key": "200,429",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Mismagius",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "60",
+                                            "defense": "40",
+                                            "specAttack": " 100",
+                                            "specDefense": "80",
+                                            "speed": "100"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Ghost"
+                                ],
+                                "abilities": [
+                                    "Levitate"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Dark",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ghost",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.9"
+                                ],
+                                "weight": [
+                                    "4.4"
+                                ],
+                                "formatted-height": [
+                                    "0.9 m"
+                                ],
+                                "formatted-weight": [
+                                    "4.4 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

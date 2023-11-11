@@ -1,0 +1,171 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "487",
+                    "name": "Giratina"
+                },
+                "description": [
+                    {
+                        "key": "It was banished for its violence. It silently gazed upon the old world from the Distortion World.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    ""
+                ],
+                "species": [
+                    "Renegade"
+                ],
+                "evolution": [
+                    {
+                        "key": "487",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Origin Forme",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "120",
+                                            "attack": "100",
+                                            "defense": "80",
+                                            "specAttack": " 100",
+                                            "specDefense": "80",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Ghost,Dragon"
+                                ],
+                                "abilities": [
+                                    "Levitate"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Dark",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Dragon",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ghost",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "4.5"
+                                ],
+                                "weight": [
+                                    "750.0"
+                                ],
+                                "formatted-height": [
+                                    "4.5 m"
+                                ],
+                                "formatted-weight": [
+                                    "750.0 kg"
+                                ]
+                            },
+                            {
+                                "attribute": {
+                                    "name": "Altered Forme",
+                                    "index": "1"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "120",
+                                            "attack": "100",
+                                            "defense": "80",
+                                            "specAttack": " 100",
+                                            "specDefense": "80",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Ghost,Dragon"
+                                ],
+                                "abilities": [
+                                    "Pressure"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Dark",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Dragon",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ghost",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "4.5"
+                                ],
+                                "weight": [
+                                    "750.0"
+                                ],
+                                "formatted-height": [
+                                    "4.5 m"
+                                ],
+                                "formatted-weight": [
+                                    "750.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

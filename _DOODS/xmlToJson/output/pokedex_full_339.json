@@ -1,0 +1,88 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "339",
+                    "name": "Barboach"
+                },
+                "description": [
+                    {
+                        "key": "Its slimy body is hard to grasp. In one region, it is said to have been born from hardened mud.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Whiskers"
+                ],
+                "evolution": [
+                    {
+                        "key": "339,340",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Barboach",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "40",
+                                            "defense": "40",
+                                            "specAttack": " 40",
+                                            "specDefense": "20",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Water,Ground"
+                                ],
+                                "abilities": [
+                                    "Anticipation,Oblivious"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Grass",
+                                            "mod": "1"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "0.4"
+                                ],
+                                "weight": [
+                                    "1.9"
+                                ],
+                                "formatted-height": [
+                                    "0.4 m"
+                                ],
+                                "formatted-weight": [
+                                    "1.9 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

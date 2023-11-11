@@ -1,0 +1,88 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "217",
+                    "name": "Ursaring"
+                },
+                "description": [
+                    {
+                        "key": "In its territory, it leaves scratches on trees that bear delicious berries or fruits.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Hibernator"
+                ],
+                "evolution": [
+                    {
+                        "key": "216,217",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Ursaring",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "100",
+                                            "defense": "60",
+                                            "specAttack": " 60",
+                                            "specDefense": "60",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal"
+                                ],
+                                "abilities": [
+                                    "Guts,Quick Feet"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.8"
+                                ],
+                                "weight": [
+                                    "125.8"
+                                ],
+                                "formatted-height": [
+                                    "1.8 m"
+                                ],
+                                "formatted-weight": [
+                                    "125.8 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "113",
+                    "name": "Chansey"
+                },
+                "description": [
+                    {
+                        "key": "A kindly Pokémon that lays highly nutritious eggs and shares them with injured Pokémon or people.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Female"
+                ],
+                "species": [
+                    "Egg"
+                ],
+                "evolution": [
+                    {
+                        "key": "440,113,242",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Chansey",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "120",
+                                            "attack": "20",
+                                            "defense": "20",
+                                            "specAttack": " 20",
+                                            "specDefense": "80",
+                                            "speed": "40"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal"
+                                ],
+                                "abilities": [
+                                    "Natural Cure,Serene Grace"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.1"
+                                ],
+                                "weight": [
+                                    "34.6"
+                                ],
+                                "formatted-height": [
+                                    "1.1 m"
+                                ],
+                                "formatted-weight": [
+                                    "34.6 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

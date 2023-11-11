@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "375",
+                    "name": "Metang"
+                },
+                "description": [
+                    {
+                        "key": "It is formed by two Beldum joining together. Its steel body won't be scratched if it collides with a jet.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    ""
+                ],
+                "species": [
+                    "Iron Claw"
+                ],
+                "evolution": [
+                    {
+                        "key": "374,375,376",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Metang",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "60",
+                                            "defense": "80",
+                                            "specAttack": " 40",
+                                            "specDefense": "60",
+                                            "speed": "40"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Steel,Psychic"
+                                ],
+                                "abilities": [
+                                    "Clear Body"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fire",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ground",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.2"
+                                ],
+                                "weight": [
+                                    "202.5"
+                                ],
+                                "formatted-height": [
+                                    "1.2 m"
+                                ],
+                                "formatted-weight": [
+                                    "202.5 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

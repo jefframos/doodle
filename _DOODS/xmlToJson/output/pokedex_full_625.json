@@ -1,0 +1,106 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "625",
+                    "name": "Bisharp"
+                },
+                "description": [
+                    {
+                        "key": "It leads a group of Pawniard. It battles to become the boss, but will be driven from the group if it loses.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "Bisharp pursues prey in the company of a large group of Pawniard. Then Bisharp finishes off the prey.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Sword Blade"
+                ],
+                "evolution": [
+                    {
+                        "key": "624,625",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Bisharp Pokémon",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "100",
+                                            "defense": "80",
+                                            "specAttack": " 60",
+                                            "specDefense": "60",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Dark,Steel"
+                                ],
+                                "abilities": [
+                                    "Defiant,Inner Focus"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "1"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Fire",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ground",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.6"
+                                ],
+                                "weight": [
+                                    "70.0"
+                                ],
+                                "formatted-height": [
+                                    "1.6 m"
+                                ],
+                                "formatted-weight": [
+                                    "70.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

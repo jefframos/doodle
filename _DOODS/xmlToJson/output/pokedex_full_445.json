@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "445",
+                    "name": "Garchomp"
+                },
+                "description": [
+                    {
+                        "key": "It is said that when one runs at high speed, its wings create blades of wind that can fell nearby trees.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Mach"
+                ],
+                "evolution": [
+                    {
+                        "key": "443,444,445",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "2"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Garchomp",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "80",
+                                            "attack": "100",
+                                            "defense": "80",
+                                            "specAttack": " 80",
+                                            "specDefense": "60",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Dragon,Ground"
+                                ],
+                                "abilities": [
+                                    "Sand Veil"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "1"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Dragon",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.9"
+                                ],
+                                "weight": [
+                                    "95.0"
+                                ],
+                                "formatted-height": [
+                                    "1.9 m"
+                                ],
+                                "formatted-weight": [
+                                    "95.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

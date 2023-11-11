@@ -1,0 +1,106 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "576",
+                    "name": "Gothitelle"
+                },
+                "description": [
+                    {
+                        "key": "Starry skies thousands of light-years away are visible in the space distorted by their intense psychic power.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "They can predict the future from the placement and movement of the stars. They can see Trainers' life spans.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Astral Body"
+                ],
+                "evolution": [
+                    {
+                        "key": "574,575,576",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "2"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Gothitelle Pokémon",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "40",
+                                            "defense": "80",
+                                            "specAttack": " 80",
+                                            "specDefense": "80",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Psychic"
+                                ],
+                                "abilities": [
+                                    "Frisk"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Bug",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ghost",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Dark",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.5"
+                                ],
+                                "weight": [
+                                    "44.0"
+                                ],
+                                "formatted-height": [
+                                    "1.5 m"
+                                ],
+                                "formatted-weight": [
+                                    "44.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

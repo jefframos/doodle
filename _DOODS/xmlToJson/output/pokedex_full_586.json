@@ -1,0 +1,241 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "586",
+                    "name": "Sawsbuck"
+                },
+                "description": [
+                    {
+                        "key": "They migrate according to the seasons. People can tell the season by looking at Sawsbuck's horns.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "The plants growing on its horns change according to the season. The leaders of the herd possess magnificent horns.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Season"
+                ],
+                "evolution": [
+                    {
+                        "key": "585,586",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Spring",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "80",
+                                            "defense": "60",
+                                            "specAttack": " 60",
+                                            "specDefense": "60",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal,Grass"
+                                ],
+                                "abilities": [
+                                    "Chlorophyll,Sap Sipper"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fire",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ice",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Poison",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Flying",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Bug",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.9"
+                                ],
+                                "weight": [
+                                    "92.5"
+                                ],
+                                "formatted-height": [
+                                    "1.9 m"
+                                ],
+                                "formatted-weight": [
+                                    "92.5 kg"
+                                ]
+                            },
+                            {
+                                "attribute": {
+                                    "name": "Summer Form",
+                                    "index": "1"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "80",
+                                            "defense": "60",
+                                            "specAttack": " 60",
+                                            "specDefense": "60",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal,Grass"
+                                ],
+                                "abilities": [
+                                    "Chlorophyll,Sap Sipper"
+                                ],
+                                "height": [
+                                    "1.9"
+                                ],
+                                "weight": [
+                                    "92.5"
+                                ],
+                                "formatted-height": [
+                                    "1.9 m"
+                                ],
+                                "formatted-weight": [
+                                    "92.5 kg"
+                                ]
+                            },
+                            {
+                                "attribute": {
+                                    "name": "Autumn Form",
+                                    "index": "2"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "80",
+                                            "defense": "60",
+                                            "specAttack": " 60",
+                                            "specDefense": "60",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal,Grass"
+                                ],
+                                "abilities": [
+                                    "Chlorophyll,Sap Sipper"
+                                ],
+                                "height": [
+                                    "1.9"
+                                ],
+                                "weight": [
+                                    "92.5"
+                                ],
+                                "formatted-height": [
+                                    "1.9 m"
+                                ],
+                                "formatted-weight": [
+                                    "92.5 kg"
+                                ]
+                            },
+                            {
+                                "attribute": {
+                                    "name": "Winter Form",
+                                    "index": "3"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "80",
+                                            "defense": "60",
+                                            "specAttack": " 60",
+                                            "specDefense": "60",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal,Grass"
+                                ],
+                                "abilities": [
+                                    "Chlorophyll,Sap Sipper"
+                                ],
+                                "height": [
+                                    "1.9"
+                                ],
+                                "weight": [
+                                    "92.5"
+                                ],
+                                "formatted-height": [
+                                    "1.9 m"
+                                ],
+                                "formatted-weight": [
+                                    "92.5 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "68",
+                    "name": "Machamp"
+                },
+                "description": [
+                    {
+                        "key": "Its four muscled arms slam foes with powerful punches and chops at blinding speed.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Superpower"
+                ],
+                "evolution": [
+                    {
+                        "key": "66,67,68",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "2"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Machamp",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "100",
+                                            "defense": "60",
+                                            "specAttack": " 60",
+                                            "specDefense": "60",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Fighting"
+                                ],
+                                "abilities": [
+                                    "Guts,No Guard"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Flying",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Psychic",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.6"
+                                ],
+                                "weight": [
+                                    "130.0"
+                                ],
+                                "formatted-height": [
+                                    "1.6 m"
+                                ],
+                                "formatted-weight": [
+                                    "130.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

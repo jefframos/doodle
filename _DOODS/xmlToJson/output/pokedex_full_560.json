@@ -1,0 +1,100 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "560",
+                    "name": "Scrafty"
+                },
+                "description": [
+                    {
+                        "key": "Groups of them beat up anything that enters their territory. Each can spit acidic liquid from its mouth.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "It can smash concrete blocks with its kicking attacks. The one with the biggest crest is the group leader.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Hoodlum"
+                ],
+                "evolution": [
+                    {
+                        "key": "559,560",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Scrafty",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "40",
+                                            "attack": "80",
+                                            "defense": "100",
+                                            "specAttack": " 40",
+                                            "specDefense": "100",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Dark,Fighting"
+                                ],
+                                "abilities": [
+                                    "Moxie,Shed Skin"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Flying",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "1.1"
+                                ],
+                                "weight": [
+                                    "30.0"
+                                ],
+                                "formatted-height": [
+                                    "1.1 m"
+                                ],
+                                "formatted-weight": [
+                                    "30.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

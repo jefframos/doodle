@@ -20,32 +20,33 @@ export default class GameStaticData {
 
     initialize() {
         let loadList = [
-            { type: 'level', list: 'waves-level-1', path: ['enemy-wave-01'] },
-            { type: 'database', list: 'body-parts', path: ['body-parts'] },
-            { type: 'database', list: 'economy', path: ['game-shop'] },
-            { type: 'database', list: 'starter-inventory', path: ['starter-inventory'], shared: true },
+            { type: 'database', list: 'allData', path: ['allData'] },
+            // { type: 'level', list: 'waves-level-1', path: ['enemy-wave-01'] },
+            // { type: 'database', list: 'body-parts', path: ['body-parts'] },
+            // { type: 'database', list: 'economy', path: ['game-shop'] },
+            // { type: 'database', list: 'starter-inventory', path: ['starter-inventory'], shared: true },
 
-            { type: 'environment', list: 'levels', path: ['level-1', 'level-2', 'level-3'] },
+            // { type: 'environment', list: 'levels', path: ['level-1', 'level-2', 'level-3'] },
 
 
-            { type: 'misc', list: 'attachments', path: ['attachments'] },
-            { type: 'misc', list: 'acessories', path: ['acessories'] },
-            { type: 'misc', list: 'buffs', path: ['buff-debuff'] },
+            // { type: 'misc', list: 'attachments', path: ['attachments'] },
+            // { type: 'misc', list: 'acessories', path: ['acessories'] },
+            // { type: 'misc', list: 'buffs', path: ['buff-debuff'] },
 
-            { type: 'entities', list: 'enemy', path: ['enemies'] },
-            { type: 'entities', list: 'player', path: ['player'] },
-            { type: 'entities', list: 'companions', path: ['companions'] },
+            // { type: 'entities', list: 'enemy', path: ['enemies'] },
+            // { type: 'entities', list: 'player', path: ['player'] },
+            // { type: 'entities', list: 'companions', path: ['companions'] },
 
-            { type: 'cards', list: 'cards', path: ['cards'] },
-            { type: 'modifiers', list: 'attributes', path: ['attribute-modifiers'], shared: true },
+            // { type: 'cards', list: 'cards', path: ['cards'] },
+            // { type: 'modifiers', list: 'attributes', path: ['attribute-modifiers'], shared: true },
 
-            { type: 'weapons', list: 'main', path: ['main-weapons'] },
-            { type: 'weapons', list: 'viewOverriders', path: ['weapon-view-overriders'] },
-            { type: 'weapons', list: 'inGameView', path: ['weapon-in-game-visuals'] },
+            // { type: 'weapons', list: 'main', path: ['main-weapons'] },
+            // { type: 'weapons', list: 'viewOverriders', path: ['weapon-view-overriders'] },
+            // { type: 'weapons', list: 'inGameView', path: ['weapon-in-game-visuals'] },
 
-            { type: 'animation', list: 'entity', path: ['entity-animation'], shared: true },
-            { type: 'animation', list: 'player', path: ['player-animation'], shared: true },
-            { type: 'animation', list: 'companion', path: ['companion-animation'], shared: true },
+            // { type: 'animation', list: 'entity', path: ['entity-animation'], shared: true },
+            // { type: 'animation', list: 'player', path: ['player-animation'], shared: true },
+            // { type: 'animation', list: 'companion', path: ['companion-animation'], shared: true },
 
             { type: 'vfx', list: 'weaponVFX', path: ['weapon-vfx'], shared: true },
             { type: 'vfx', list: 'entityVFXPack', path: ['general-vfx'], shared: true },
@@ -69,9 +70,12 @@ export default class GameStaticData {
             }
 
             element.path.forEach(jsonPath => {
-                let data = Game.MainLoader.resources[jsonPath].data.list
-                if (!data) {
-                    data = Game.MainLoader.resources[jsonPath].data;
+                let data = Game.MainLoader.resources[jsonPath].data
+                if (data.list) {
+                    data = Game.MainLoader.resources[jsonPath].data.list;
+                }
+                if (data.pokedex) {
+                    data = Game.MainLoader.resources[jsonPath].data.pokedex;
                 }
                 data.forEach(row => {
                     this.staticAssets[element.type][element.list].allElements.push(row);
@@ -83,9 +87,9 @@ export default class GameStaticData {
             });
         });
 
-        this.staticAssets['vfxDescriptors'] = {};
-        this.convertSpriteSheet('vfx', 'weaponVFX')
-        this.convertSpriteSheet('vfx', 'entityVFXPack')
+        // this.staticAssets['vfxDescriptors'] = {};
+        // this.convertSpriteSheet('vfx', 'weaponVFX')
+        // this.convertSpriteSheet('vfx', 'entityVFXPack')
         console.log(this.staticAssets)
     }
     convertSpriteSheet(type, subtype) {
@@ -96,6 +100,10 @@ export default class GameStaticData {
             desc.addBaseBehaviours(SpriteSheetBehaviour, spriteSheetParams)
             this.staticAssets['vfxDescriptors'][spriteSheetParams.id] = (desc)
         });
+    }
+    getUnitById(id){
+        var allData = this.getAllDataFrom('database', 'allData');
+        return allData[id]
     }
     getDescriptor(id) {
         let data = this.staticAssets['vfxDescriptors'][id];

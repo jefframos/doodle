@@ -1,0 +1,106 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "638",
+                    "name": "Cobalion"
+                },
+                "description": [
+                    {
+                        "key": "This legendary Pokémon battled against humans to protect Pokémon. Its personality is calm and composed.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "It has a body and heart of steel. Its glare is sufficient to make even an unruly Pokémon obey it.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    ""
+                ],
+                "species": [
+                    "Iron Will"
+                ],
+                "evolution": [
+                    {
+                        "key": "638",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Cobalion Pokémon",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "80",
+                                            "defense": "100",
+                                            "specAttack": " 80",
+                                            "specDefense": "60",
+                                            "speed": "100"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Steel,Fighting"
+                                ],
+                                "abilities": [
+                                    "Justified"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fire",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Ground",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "2.1"
+                                ],
+                                "weight": [
+                                    "250.0"
+                                ],
+                                "formatted-height": [
+                                    "2.1 m"
+                                ],
+                                "formatted-weight": [
+                                    "250.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

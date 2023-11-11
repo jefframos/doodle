@@ -1,0 +1,236 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "646",
+                    "name": "Kyurem"
+                },
+                "description": [
+                    {
+                        "key": "This legendary ice Pokémon waits for a hero to fill in the missing parts of its body with truth or ideals.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    ""
+                ],
+                "species": [
+                    "Boundary"
+                ],
+                "evolution": [
+                    {
+                        "key": "646",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Kyurem",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "100",
+                                            "attack": "100",
+                                            "defense": "80",
+                                            "specAttack": " 120",
+                                            "specDefense": "80",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Dragon,Ice"
+                                ],
+                                "abilities": [
+                                    "Pressure"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Dragon",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Steel",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "3.0"
+                                ],
+                                "weight": [
+                                    "325.0"
+                                ],
+                                "formatted-height": [
+                                    "3.0 m"
+                                ],
+                                "formatted-weight": [
+                                    "325.0 kg"
+                                ]
+                            },
+                            {
+                                "attribute": {
+                                    "name": "Black Kyurem",
+                                    "index": "1"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "100",
+                                            "attack": "120",
+                                            "defense": "80",
+                                            "specAttack": " 80",
+                                            "specDefense": "80",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Dragon,Ice"
+                                ],
+                                "abilities": [
+                                    "Teravolt"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Dragon",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Steel",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "3.3"
+                                ],
+                                "weight": [
+                                    "325.0"
+                                ],
+                                "formatted-height": [
+                                    "3.3 m"
+                                ],
+                                "formatted-weight": [
+                                    "325.0 kg"
+                                ]
+                            },
+                            {
+                                "attribute": {
+                                    "name": "White Kyurem",
+                                    "index": "2"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "100",
+                                            "attack": "80",
+                                            "defense": "80",
+                                            "specAttack": " 120",
+                                            "specDefense": "80",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Dragon,Ice"
+                                ],
+                                "abilities": [
+                                    "Turboblaze"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Dragon",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Steel",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "3.6"
+                                ],
+                                "weight": [
+                                    "325.0"
+                                ],
+                                "formatted-height": [
+                                    "3.6 m"
+                                ],
+                                "formatted-weight": [
+                                    "325.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "602",
+                    "name": "Tynamo"
+                },
+                "description": [
+                    {
+                        "key": "While one alone doesn't have much power, a chain of many Tynamo can be as powerful as lightning.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "These Pokémon move in schools. They have an electricity-generating organ, so they discharge electricity if in danger.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "EleFish"
+                ],
+                "evolution": [
+                    {
+                        "key": "602,603,604",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Tynamo Pokémon",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "20",
+                                            "attack": "40",
+                                            "defense": "40",
+                                            "specAttack": " 40",
+                                            "specDefense": "20",
+                                            "speed": "60"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Electric"
+                                ],
+                                "abilities": [
+                                    "Levitate"
+                                ],
+                                "height": [
+                                    "0.2"
+                                ],
+                                "weight": [
+                                    "0.3"
+                                ],
+                                "formatted-height": [
+                                    "0.2 m"
+                                ],
+                                "formatted-weight": [
+                                    "0.3 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

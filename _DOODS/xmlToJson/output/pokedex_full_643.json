@@ -1,0 +1,106 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "643",
+                    "name": "Reshiram"
+                },
+                "description": [
+                    {
+                        "key": "This Pokémon appears in legends. It sends flames into the air from its tail, burning up everything around it.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "When Reshiram's tail flares, the heat energy moves the atmosphere and changes the world's weather.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    ""
+                ],
+                "species": [
+                    "Vast White"
+                ],
+                "evolution": [
+                    {
+                        "key": "643",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "0"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Reshiram Pokémon",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "80",
+                                            "attack": "100",
+                                            "defense": "80",
+                                            "specAttack": " 120",
+                                            "specDefense": "100",
+                                            "speed": "80"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Dragon,Fire"
+                                ],
+                                "abilities": [
+                                    "Turboblaze"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Ground",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Rock",
+                                            "mod": "0"
+                                        }
+                                    },
+                                    {
+                                        "attribute": {
+                                            "type": "Dragon",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "3.2"
+                                ],
+                                "weight": [
+                                    "330.0"
+                                ],
+                                "formatted-height": [
+                                    "3.2 m"
+                                ],
+                                "formatted-weight": [
+                                    "330.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "143",
+                    "name": "Snorlax"
+                },
+                "description": [
+                    {
+                        "key": "When its belly is full, it becomes too lethargic to even lift a finger, so it is safe to bounce on its belly.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "Sleeping"
+                ],
+                "evolution": [
+                    {
+                        "key": "446,143",
+                        "attribute": {
+                            "pattern": "2",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Snorlax",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "120",
+                                            "attack": "100",
+                                            "defense": "60",
+                                            "specAttack": " 60",
+                                            "specDefense": "80",
+                                            "speed": "20"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal"
+                                ],
+                                "abilities": [
+                                    "Immunity,Thick Fat"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "2.1"
+                                ],
+                                "weight": [
+                                    "460.0"
+                                ],
+                                "formatted-height": [
+                                    "2.1 m"
+                                ],
+                                "formatted-weight": [
+                                    "460.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

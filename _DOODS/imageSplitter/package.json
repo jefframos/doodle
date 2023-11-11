@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "ss": "node generateSpritesheet.js",
+    "crop": "node splitImages.js"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "sharp": "^0.32.6"
+  }
+}

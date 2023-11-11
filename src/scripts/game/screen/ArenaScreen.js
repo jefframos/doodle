@@ -5,8 +5,11 @@ import PerspectiveCamera from "../core/PerspectiveCamera";
 import Vector3 from "../core/gameObject/Vector3";
 import RenderModule from "../core/modules/RenderModule";
 import Pool from "../core/utils/Pool";
+import Utils from "../core/utils/Utils";
 import Creature from "../entities/animation/Creature";
 import Head from "../entities/animation/Head";
+import BaseUnit from "../entities/units/BaseUnit";
+import BaseMap from "../entities/units/maps/BaseMap";
 import EffectsManager from "../manager/EffectsManager";
 import MainScreenManager from "./MainScreenManager";
 
@@ -37,25 +40,34 @@ export default class ArenaScreen extends Screen {
 
         this.camera.setFollowPoint(new Vector3())
 
+
+
     }
     build(param) {
         super.build();
         this.gameEngine.start();
         //this.worldRender = this.gameEngine.addGameObject(new EnvironmentManager());
+        this.map = this.gameEngine.poolGameObject(BaseMap, true)
 
-        let entity = this.gameEngine.poolGameObject(Head, true)
+        this.map.onMapUp.add((position)=>{
+            let entity = this.gameEngine.poolGameObject(BaseUnit, true)
 
-        // for (let index = 0; index < 150; index++) {
-        //     const ang = Math.random() * 3.14 * 2
-        //     const dist = Math.random() * 1200
-        //     let entity = this.gameEngine.poolGameObject(Creature, true)
-        //     entity.x = Math.cos(ang) *dist
-        //     entity.z = Math.sin(ang) *dist
-    
-        // }
+            var local = this.gameplayContainer.toLocal(position)
+            entity.x = local.x
+            entity.z = local.y 
+        })
+
+        this.camera.setFollowPoint(this.map.mapCenter)
     }
     update(delta) {
         const timeScale = 1.25
+
+        if(this.map){
+            var zoom =  Utils.scaleToFitDimensions(this.map.dimensions, Game.Borders)
+            this.camera.targetZoom =zoom
+        }
+
+
         const debugTimeScale = Game.Debug.timeScale | 1
         const scaledTime =  delta * debugTimeScale * timeScale;
         delta *= debugTimeScale;

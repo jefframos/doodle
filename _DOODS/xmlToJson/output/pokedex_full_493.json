@@ -1,0 +1,88 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "493",
+                    "name": "Arceus"
+                },
+                "description": [
+                    {
+                        "key": "It is said to have emerged from an egg in a place where there was nothing, then shaped the world.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    }
+                ],
+                "genders": [
+                    ""
+                ],
+                "species": [
+                    "Alpha"
+                ],
+                "evolution": [
+                    {
+                        "key": "493",
+                        "attribute": {
+                            "pattern": "1",
+                            "position": "1"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Normal",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "100",
+                                            "attack": "100",
+                                            "defense": "100",
+                                            "specAttack": " 100",
+                                            "specDefense": "100",
+                                            "speed": "100"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Normal"
+                                ],
+                                "abilities": [
+                                    "Multitype"
+                                ],
+                                "weakness": [
+                                    {
+                                        "attribute": {
+                                            "type": "Fighting",
+                                            "mod": "0"
+                                        }
+                                    }
+                                ],
+                                "height": [
+                                    "3.2"
+                                ],
+                                "weight": [
+                                    "320.0"
+                                ],
+                                "formatted-height": [
+                                    "3.2 m"
+                                ],
+                                "formatted-weight": [
+                                    "320.0 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -43,6 +43,8 @@ export default class Game {
         Game.Screen.width = config.width
         Game.Screen.height = config.height
         Game.Time = 0;
+
+        Game.IsPortrait = window.innerHeight > window.innerWidth;
         this.ratio = config.width / config.height;
         window.renderer = new PIXI.Application({
             width: config.width,

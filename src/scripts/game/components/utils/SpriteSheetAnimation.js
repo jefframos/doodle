@@ -37,6 +37,23 @@ export default class SpriteSheetAnimation {
         this.animationState[state].layers.push(animLayer)
         this.currentAnimation = animLayer;
     }
+    addFrames(state, frames,speed, anchor){
+        let animLayer = {
+            currentAnimationTime: 0,
+            currentFrame: 0,
+            animationFrames: frames,
+            frameTime: speed,
+            loop: 1,
+            anchor: anchor || { x: 0.5, y: 1 }
+        }
+       
+        if (!this.animationState[state] || !this.animationState[state].layers) {
+            this.animationState[state] = {}
+            this.animationState[state].layers = []
+        }
+        this.animationState[state].layers.push(animLayer)
+        this.currentAnimation = animLayer;
+    }
     addLayer(state, spriteName, param = { totalFramesRange: { min: 0, max: 1 }, time: 0.1, loop: true, addZero: false, anchor: { x: 0.5, y: 0.5 } }) {
         let animLayer = {
             currentAnimationTime: 0,
@@ -98,6 +115,9 @@ export default class SpriteSheetAnimation {
     setLayer(id) {
         if (id >= 0) {
             this.currentLayerID = id;
+        }
+        if(! this.animationState[this.currentState]){
+            console.log( this.animationState,this.currentState)
         }
         this.currentAnimation = this.animationState[this.currentState].layers[this.currentLayerID];
 

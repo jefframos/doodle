@@ -70,6 +70,8 @@ export default class GameObject extends BaseComponent {
         gameObject.setParent(this)
         this.childAdded.dispatch(gameObject)
         this.children.push(gameObject);
+
+        return gameObject
     }
     setActive(value = true) {
         if (value == this.enabled) return;

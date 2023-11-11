@@ -30,6 +30,10 @@ export default class Utils {
     static scaleToFit(element, size) {
         return Math.min(size / element.width * element.scale.x, size / element.height * element.scale.y)
     }
+    static scaleToFitDimensions(element, res) {
+        const size = Math.max(res.width, res.height)
+        return Math.min(size / element.width, size / element.height)
+    }
     static angleLerp(a0, a1, t) {
         return a0 + Utils.shortAngleDist(a0, a1) * t;
     }

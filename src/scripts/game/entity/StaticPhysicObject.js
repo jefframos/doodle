@@ -4,14 +4,15 @@ import PhysicsEntity from "../core/physics/PhysicsEntity";
 import RenderModule from "../core/modules/RenderModule";
 import Shadow from "../components/view/Shadow";
 import TagManager from "../core/TagManager";
+import WorldGameView from "../core/view/WorldGameView";
 
 export default class StaticPhysicObject extends PhysicsEntity {
     constructor() {
         super();
 
-        this.gameView = new GameView(this);
+        this.gameView = new WorldGameView(this);
         this.gameView.view = new PIXI.Sprite()
-        this.gameView.tag = TagManager.Tags.Occlusion;
+        //this.gameView.tag = TagManager.Tags.Occlusion;
         this.gameView.layer = RenderModule.RenderLayers.Gameplay
 
     }
@@ -20,33 +21,28 @@ export default class StaticPhysicObject extends PhysicsEntity {
 
         const render = this.engine.findByType(RenderModule);
 
-        if( params.layer && this.gameView.view.layer != RenderModule.RenderLayers[params.layer]){
-            render.swapLayer(this.gameView, RenderModule.RenderLayers[params.layer])
-        }else if(this.gameView.view.layer != RenderModule.RenderLayers.Base){
-            render.swapLayer(this.gameView, RenderModule.RenderLayers.Base)
-        }
-        
-        this.buildRect(params.x, params.z, params.width, params.height, true);
-        
-        this.gameView.view.scale.set(params.width / this.gameView.view.width )
-        this.gameView.view.anchor.set(0.5, 1)
+        if( params.layer && this.gameView.layer != params.layer){
+            render.swapLayer(this.gameView, params.layer)
+        }        
+        this.buildRect(params.x, params.y, params.width, params.height, true);
+        this.gameView.view.texture = PIXI.Texture.from('tile')
+        this.gameView.view.width = params.width
+        this.gameView.view.height = params.height
+        this.gameView.view.anchor.set(0.5)
+
 
         this.layerCategory = Layer.Environment
         this.layerMask = Layer.EnvironmentCollision
 
     }
     afterBuild(){
-        super.afterBuild()
-        
-        // let shadow = this.engine.poolGameObject(Shadow)
-        // this.addChild(shadow)
-
-        // shadow.transform.position.x = this.x
-        // shadow.transform.position.z = this.z
+        super.afterBuild()        
 
     }
     update(delta) {
         super.update(delta);
-        this.gameView.update(delta)
+
+      //  console.log(this.transform.position)
+        //console.log(this.gameView.view.position)
     }
 }

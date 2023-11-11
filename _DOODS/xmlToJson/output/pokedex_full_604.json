@@ -1,0 +1,86 @@
+{
+    "pokedex": {
+        "pokemon": [
+            {
+                "attribute": {
+                    "number": "604",
+                    "name": "Eelektross"
+                },
+                "description": [
+                    {
+                        "key": "They crawl out of the ocean using their arms. They will attack prey on shore and immediately drag it into the ocean.",
+                        "attribute": {
+                            "rank": "0"
+                        }
+                    },
+                    {
+                        "key": "With their sucker mouths, they suck in prey. Then they use their fangs to shock the prey with electricity.",
+                        "attribute": {
+                            "rank": "1"
+                        }
+                    }
+                ],
+                "genders": [
+                    "Male,Female"
+                ],
+                "species": [
+                    "EleFish"
+                ],
+                "evolution": [
+                    {
+                        "key": "602,603,604",
+                        "attribute": {
+                            "pattern": "5",
+                            "position": "2"
+                        }
+                    }
+                ],
+                "formes": [
+                    {
+                        "forme": [
+                            {
+                                "attribute": {
+                                    "name": "Eelektross",
+                                    "index": "0"
+                                },
+                                "images": [
+                                    ""
+                                ],
+                                "stats": [
+                                    {
+                                        "attribute": {
+                                            "hp": "60",
+                                            "attack": "100",
+                                            "defense": "60",
+                                            "specAttack": " 100",
+                                            "specDefense": "60",
+                                            "speed": "40"
+                                        }
+                                    }
+                                ],
+                                "types": [
+                                    "Electric"
+                                ],
+                                "abilities": [
+                                    "Levitate"
+                                ],
+                                "height": [
+                                    "2.1"
+                                ],
+                                "weight": [
+                                    "80.5"
+                                ],
+                                "formatted-height": [
+                                    "2.1 m"
+                                ],
+                                "formatted-weight": [
+                                    "80.5 kg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

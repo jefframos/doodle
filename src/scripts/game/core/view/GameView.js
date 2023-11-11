@@ -6,6 +6,9 @@ import TagManager from '../TagManager';
 
 export default class GameView {
     constructor(gameObject) {
+        if(!gameObject){
+            console.log("No Game Object attached");
+        }
         this.tag = TagManager.Tags.Untagged;
         this.layer = RenderModule.RenderLayers.Gameplay
         this.viewOffset = { x: 0, y: 0 }

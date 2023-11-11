@@ -10,7 +10,7 @@ export default class RenderModule extends GameObject {
         Debug: '_u_debug',
         Shadow: '_u__p_shadow',
         Default: '_n_default',
-        Floor: '_p_floor',
+        Floor: 'floor',
         Building: 'building',
         BackLayer: '_u_back',
         Gameplay: '_u_gameplay',

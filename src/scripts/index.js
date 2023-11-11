@@ -112,23 +112,13 @@ if (!window.isMobile) {
 
 
 
-window.noPoki = false;
+window.noPoki = true;
 
 
 window.onAdds = new signals.Signal();
 window.onStopAdds = new signals.Signal();
 
-
-window.GAME_ID = 572860816402905
-
-let audioToLoad = [] //['assets/audio/dream1.mp3', 'assets/audio/dream2.mp3']
 window.SOUND_MANAGER = new SoundManager();
-
-
-
-window.getCoinSound = function () {
-    return 'coins_0' + Math.ceil(Math.random() * 4)
-}
 
 
 window.game = new Game(config);
@@ -175,6 +165,9 @@ function loadManifests() {
 
     }
 
+
+    spritesheetManifest['default'].push('image/pokes.json');
+    console.log(spritesheetManifest)
     for (var i = spritesheetManifest['default'].length - 1; i >= 0; i--) {
         let dest = 'assets/' + spritesheetManifest['default'][i]
 
@@ -243,42 +236,28 @@ window.loadedOnce = false;
 
 function configGame(evt) {
 
-
     GameStaticData.instance.initialize();
 
-    const defaultInventory = GameStaticData.instance.getDataById('database', 'starter-inventory');
 
-    CookieManager.instance.sortCookie("main", defaultInventory)
+    //breaks on mobile
+    // const firstPlayer = CookieManager.instance.getPlayer(0)
+    // if (!firstPlayer) {
+    //     CookieManager.instance.savePlayer(0)
+    // }
+    // CookieManager.instance.sortPlayers()
 
-    const firstPlayer = CookieManager.instance.getPlayer(0)
-    if (!firstPlayer) {
-        CookieManager.instance.savePlayer(0)
-    }
-    CookieManager.instance.sortPlayers()
-    ViewDatabase.instance.initialize();
+
+    //ViewDatabase.instance.initialize();
     //window.localizationManager = new LocalizationManager('');
     SOUND_MANAGER.load(audioManifest);
     window.RESOURCES = evt.resources;
     window.TILE_ASSSETS_POOL = []
 
-    let toGenerate = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '?', '!', 'X', 'v', '+', '<', '>', 't', 'MAX', 'Fight BOSS', '100']
-    for (let index = 0; index < toGenerate.length; index++) {
-
-        let container = new PIXI.Container()
-        let text = new PIXI.Text(toGenerate[index], LABELS.LABEL2);
-        text.style.fontSize = 64
-        text.style.fill = 0xFFFFFF
-        text.style.strokeThickness = 0
-        container.addChild(text)
-
-        let id = toGenerate[index].substring(0, 4)
-        let tex = utils.generateTextureFromContainer('image-' + id, container, window.TILE_ASSSETS_POOL)
-
-    }
     if (!window.noPoki && !window.loadedOnce) {
         PokiSDK.gameLoadingFinished();
         window.loadedOnce = true;
     }
+
     if (!window.screenManager) {
         window.screenManager = new MainScreenManager();
     }

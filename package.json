@@ -18,6 +18,7 @@
     "serve": "webpack-dev-server --progress --colors",
     "dev:fb": "npm run assets & npm run assets:watch & npm run js:watch",
     "build": "npm run assets && npm run tiny && webpack",
+    "build3": "npm run assets && webpack",
     "build2": "webpack",
     "build:dev": "webpack",
     "assets": "npm run image & npm run json & npm run audio"

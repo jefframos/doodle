@@ -8,6 +8,7 @@ export default class Eugine {
     static PhysicsTimeScale = 1;
     static TimeScale = 1;
     constructor() {
+        window.Eugine = this;
         this.entityAdded = new signals.Signal()
         this.gameObjects = []
         this.resizeableList = []

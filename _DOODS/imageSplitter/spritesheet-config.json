@@ -1,0 +1,21 @@
+{
+  "format": "json-array",
+  "texture": "spritesheet.png",
+  "scale": 1,
+  "sizeconstraints": {
+    "max-width": 4096,
+    "max-height": 2048
+  },
+  "border-padding": 2,
+  "shape-padding": 2,
+  "trim-mode": 1,
+  "algorithm": "Basic",
+  "texture-filename": "{n}.png",
+  "prepend-folder-name": false,
+  "common-divisor-x": 1,
+  "common-divisor-y": 1,
+  "enable-rotation": true,
+  "enable-multiple-sheets": true,
+  "filename": "spritesheet",
+  "scale-mode": "Smooth"
+}
