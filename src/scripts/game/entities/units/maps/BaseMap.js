@@ -19,7 +19,7 @@ export default class BaseMap extends GameObject {
         this.gameView = new WorldGameView(this);
 
         this.gameView.view = new PIXI.Container()
-        this.gameView.layer = RenderModule.RenderLayers.Floor
+        this.gameView.layer = RenderModule.RenderLayers.Base
 
         this.floorTexture = new PIXI.TilingSprite(PIXI.Texture.from('grass-patch-1'), 256, 256);
         this.gameView.view.addChild(this.floorTexture)

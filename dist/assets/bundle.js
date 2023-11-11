@@ -76463,7 +76463,7 @@ var BaseMap = function (_GameObject) {
         _this.gameView = new _WorldGameView2.default(_this);
 
         _this.gameView.view = new PIXI.Container();
-        _this.gameView.layer = _RenderModule2.default.RenderLayers.Floor;
+        _this.gameView.layer = _RenderModule2.default.RenderLayers.Base;
 
         _this.floorTexture = new PIXI.TilingSprite(PIXI.Texture.from('grass-patch-1'), 256, 256);
         _this.gameView.view.addChild(_this.floorTexture);
@@ -109064,11 +109064,11 @@ var assets = [{
 	"id": "FloatingCities",
 	"url": "assets/audio\\FloatingCities.mp3"
 }, {
-	"id": "getstar",
-	"url": "assets/audio\\getstar.mp3"
-}, {
 	"id": "dropTile",
 	"url": "assets/audio\\dropTile.mp3"
+}, {
+	"id": "getstar",
+	"url": "assets/audio\\getstar.mp3"
 }, {
 	"id": "getThemAll",
 	"url": "assets/audio\\getThemAll.mp3"
@@ -109076,29 +109076,29 @@ var assets = [{
 	"id": "item",
 	"url": "assets/audio\\item.mp3"
 }, {
+	"id": "kill",
+	"url": "assets/audio\\kill.mp3"
+}, {
 	"id": "magic",
 	"url": "assets/audio\\magic.mp3"
 }, {
 	"id": "Musical-Beep-Loop-02",
 	"url": "assets/audio\\Musical-Beep-Loop-02.mp3"
 }, {
+	"id": "place",
+	"url": "assets/audio\\place.mp3"
+}, {
 	"id": "Ping-Slide-Down",
 	"url": "assets/audio\\Ping-Slide-Down.mp3"
-}, {
-	"id": "kill",
-	"url": "assets/audio\\kill.mp3"
 }, {
 	"id": "Pop-Low-Pitch-Up-02",
 	"url": "assets/audio\\Pop-Low-Pitch-Up-02.mp3"
 }, {
-	"id": "Pop-Musical",
-	"url": "assets/audio\\Pop-Musical.mp3"
-}, {
-	"id": "place",
-	"url": "assets/audio\\place.mp3"
-}, {
 	"id": "Pop-Tone",
 	"url": "assets/audio\\Pop-Tone.mp3"
+}, {
+	"id": "Pop-Musical",
+	"url": "assets/audio\\Pop-Musical.mp3"
 }, {
 	"id": "pop",
 	"url": "assets/audio\\pop.mp3"
@@ -109106,23 +109106,23 @@ var assets = [{
 	"id": "pop2",
 	"url": "assets/audio\\pop2.mp3"
 }, {
+	"id": "slot-machine",
+	"url": "assets/audio\\slot-machine.mp3"
+}, {
 	"id": "shoosh",
 	"url": "assets/audio\\shoosh.mp3"
 }, {
 	"id": "squash1",
 	"url": "assets/audio\\squash1.mp3"
 }, {
-	"id": "slot-machine",
-	"url": "assets/audio\\slot-machine.mp3"
-}, {
-	"id": "Tap-01",
-	"url": "assets/audio\\Tap-01.mp3"
-}, {
 	"id": "Synth-Appear-01",
 	"url": "assets/audio\\Synth-Appear-01.mp3"
 }, {
 	"id": "teleport",
 	"url": "assets/audio\\teleport.mp3"
+}, {
+	"id": "Tap-01",
+	"url": "assets/audio\\Tap-01.mp3"
 }];
 
 exports.default = assets;
@@ -109314,11 +109314,11 @@ var assets = [{
 	"id": "companion-animation",
 	"url": "assets/json\\animation\\companion-animation.json"
 }, {
-	"id": "entity-animation",
-	"url": "assets/json\\animation\\entity-animation.json"
-}, {
 	"id": "player-animation",
 	"url": "assets/json\\animation\\player-animation.json"
+}, {
+	"id": "entity-animation",
+	"url": "assets/json\\animation\\entity-animation.json"
 }, {
 	"id": "body-parts",
 	"url": "assets/json\\database\\body-parts.json"
@@ -109338,15 +109338,6 @@ var assets = [{
 	"id": "player",
 	"url": "assets/json\\entity\\player.json"
 }, {
-	"id": "enemy-wave-01",
-	"url": "assets/json\\enemy-waves\\enemy-wave-01.json"
-}, {
-	"id": "waves2",
-	"url": "assets/json\\enemy-waves\\waves2.json"
-}, {
-	"id": "wavesBkp",
-	"url": "assets/json\\enemy-waves\\wavesBkp.json"
-}, {
 	"id": "level-1",
 	"url": "assets/json\\environment\\level-1.json"
 }, {
@@ -109356,17 +109347,41 @@ var assets = [{
 	"id": "level-3",
 	"url": "assets/json\\environment\\level-3.json"
 }, {
+	"id": "enemy-wave-01",
+	"url": "assets/json\\enemy-waves\\enemy-wave-01.json"
+}, {
+	"id": "wavesBkp",
+	"url": "assets/json\\enemy-waves\\wavesBkp.json"
+}, {
+	"id": "waves2",
+	"url": "assets/json\\enemy-waves\\waves2.json"
+}, {
 	"id": "acessories",
 	"url": "assets/json\\misc\\acessories.json"
 }, {
 	"id": "attachments",
 	"url": "assets/json\\misc\\attachments.json"
 }, {
+	"id": "attribute-modifiers",
+	"url": "assets/json\\misc\\attribute-modifiers.json"
+}, {
 	"id": "buff-debuff",
 	"url": "assets/json\\misc\\buff-debuff.json"
 }, {
-	"id": "attribute-modifiers",
-	"url": "assets/json\\misc\\attribute-modifiers.json"
+	"id": "general-vfx",
+	"url": "assets/json\\vfx\\general-vfx.json"
+}, {
+	"id": "particle-behaviour",
+	"url": "assets/json\\vfx\\particle-behaviour.json"
+}, {
+	"id": "weapon-vfx-pack",
+	"url": "assets/json\\vfx\\weapon-vfx-pack.json"
+}, {
+	"id": "particle-descriptors",
+	"url": "assets/json\\vfx\\particle-descriptors.json"
+}, {
+	"id": "weapon-vfx",
+	"url": "assets/json\\vfx\\weapon-vfx.json"
 }, {
 	"id": "main-weapons",
 	"url": "assets/json\\weapons\\main-weapons.json"
@@ -109376,21 +109391,6 @@ var assets = [{
 }, {
 	"id": "weapon-view-overriders",
 	"url": "assets/json\\weapons\\weapon-view-overriders.json"
-}, {
-	"id": "general-vfx",
-	"url": "assets/json\\vfx\\general-vfx.json"
-}, {
-	"id": "particle-behaviour",
-	"url": "assets/json\\vfx\\particle-behaviour.json"
-}, {
-	"id": "particle-descriptors",
-	"url": "assets/json\\vfx\\particle-descriptors.json"
-}, {
-	"id": "weapon-vfx-pack",
-	"url": "assets/json\\vfx\\weapon-vfx-pack.json"
-}, {
-	"id": "weapon-vfx",
-	"url": "assets/json\\vfx\\weapon-vfx.json"
 }];
 
 exports.default = assets;
