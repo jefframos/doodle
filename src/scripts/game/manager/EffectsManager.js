@@ -1,13 +1,13 @@
-import AlphaBehaviour from "../components/particleSystem/particleBehaviour/AlphaBehaviour";
-import ColorBehaviour from "../components/particleSystem/particleBehaviour/ColorBehaviour";
+import AlphaBehaviour from "../core/effects/particleSystem/particleBehaviour/AlphaBehaviour";
+import ColorBehaviour from "../core/effects/particleSystem/particleBehaviour/ColorBehaviour";
 import Game from "../../Game";
 import GameObject from "../core/gameObject/GameObject";
 import GameStaticData from "../data/GameStaticData";
-import ParticleDescriptor from "../components/particleSystem/ParticleDescriptor";
-import ParticleEmitter from "../components/particleSystem/ParticleEmitter";
+import ParticleDescriptor from "../core/effects/particleSystem/ParticleDescriptor";
+import ParticleEmitter from "../core/effects/particleSystem/ParticleEmitter";
 import RenderModule from "../core/modules/RenderModule";
-import SinoidBehaviour from "../components/particleSystem/particleBehaviour/SinoidBehaviour";
-import SpriteSheetBehaviour from "../components/particleSystem/particleBehaviour/SpriteSheetBehaviour";
+import SinoidBehaviour from "../core/effects/particleSystem/particleBehaviour/SinoidBehaviour";
+import SpriteSheetBehaviour from "../core/effects/particleSystem/particleBehaviour/SpriteSheetBehaviour";
 
 export default class EffectsManager extends GameObject {
     static instance;

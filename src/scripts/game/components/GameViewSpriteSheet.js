@@ -2,7 +2,6 @@ import BaseComponent from '../core/gameObject/BaseComponent';
 import Pool from '../core/utils/Pool';
 import Shaders from '../shader/Shaders';
 import SpriteSheetAnimation from './utils/SpriteSheetAnimation';
-import SpriteSheetBehaviour from './particleSystem/particleBehaviour/SpriteSheetBehaviour';
 import Utils from '../core/utils/Utils';
 import signals from 'signals';
 

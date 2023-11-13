@@ -1,9 +1,6 @@
 import * as PIXI from 'pixi.js';
 
 import Camera from './Camera';
-import Game from '../../Game';
-import LightSource from './view/LightSource';
-import Player from '../entity/Player';
 import RenderModule from './modules/RenderModule';
 import utils from '../../utils';
 

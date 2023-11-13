@@ -1,8 +1,6 @@
-import { Assets } from 'pixi.js';
-import EnemyStaticData from './EnemyStaticData';
 import Game from '../../Game';
-import ParticleDescriptor from '../components/particleSystem/ParticleDescriptor';
-import SpriteSheetBehaviour from '../components/particleSystem/particleBehaviour/SpriteSheetBehaviour';
+import ParticleDescriptor from '../core/effects/particleSystem/ParticleDescriptor';
+import SpriteSheetBehaviour from '../core/effects/particleSystem/particleBehaviour/SpriteSheetBehaviour';
 
 export default class GameStaticData {
 

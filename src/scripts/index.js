@@ -4,10 +4,8 @@ import CookieManager from './game/CookieManager';
 import Game from './Game';
 import GameStaticData from './game/data/GameStaticData';
 import MainScreenManager from './game/screen/MainScreenManager';
-import RewardsManager from './game/data/RewardsManager';
 import SoundManager from './soundManager/SoundManager'
 import Utils from './game/core/utils/Utils';
-import ViewDatabase from './game/data/ViewDatabase';
 import audioManifest from './manifests/manifest-audio'
 import globals from './globals';
 import jsonManifest from './manifests/manifest-json'

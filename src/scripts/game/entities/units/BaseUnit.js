@@ -1,14 +1,14 @@
-
-import GameViewSpriteSheet from "../../components/GameViewSpriteSheet";
-import Shadow from "../../components/view/Shadow";
-import Layer from "../../core/Layer";
-import Vector3 from "../../core/gameObject/Vector3";
-import RenderModule from "../../core/modules/RenderModule";
-import PhysicsEntity from "../../core/physics/PhysicsEntity";
-import WorldGameView from "../../core/view/WorldGameView";
-import GameStaticData from "../../data/GameStaticData";
-import UIUtils from "../../utils/UIUtils";
 import BaseMap from "./maps/BaseMap";
+import GameStaticData from "../../data/GameStaticData";
+import GameViewSpriteSheet from "../../components/GameViewSpriteSheet";
+import Layer from "../../core/Layer";
+import PhysicsEntity from "../../core/physics/PhysicsEntity";
+import RenderModule from "../../core/modules/RenderModule";
+import Shadow from "../../components/view/Shadow";
+import SpriteScaleBounceAppear from "../../components/SpriteScaleBounceAppear";
+import UIUtils from "../../utils/UIUtils";
+import Vector3 from "../../core/gameObject/Vector3";
+import WorldGameView from "../../core/view/WorldGameView";
 
 export default class BaseUnit extends PhysicsEntity {
 
@@ -37,6 +37,7 @@ export default class BaseUnit extends PhysicsEntity {
 
 
         this.addChild(this.engine.poolGameObject(Shadow))
+
 
         this.spriteSheet = this.addComponent(GameViewSpriteSheet);
 
@@ -89,6 +90,9 @@ export default class BaseUnit extends PhysicsEntity {
 
         //console.log(forme)
         //console.log(stats)
+
+        //this.addComponent(SpriteScaleBounceAppear)
+
 
     }
     start() {

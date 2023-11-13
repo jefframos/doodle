@@ -10,11 +10,11 @@
 }},
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
-	"version": "1.1",
+	"version": "1.0",
 	"image": "terrain.png",
 	"format": "RGBA8888",
 	"size": {"w":31,"h":31},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:9f3818839a13b69b9b6deab96e5fa20a:c8c4fddeda005ab0e039de0e929e58ff:a52c91d73586a2a634ceb55ad22f4949$"
+	"smartupdate": "$TexturePacker:SmartUpdate:0bf3ebd186c78e3f309fcdd829fc6d43:c8c4fddeda005ab0e039de0e929e58ff:a52c91d73586a2a634ceb55ad22f4949$"
 }
 }

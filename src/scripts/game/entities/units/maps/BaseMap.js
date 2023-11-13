@@ -1,18 +1,19 @@
-import signals from "signals";
-import GameObject from "../../../core/gameObject/GameObject";
-import Vector3 from "../../../core/gameObject/Vector3";
-import RenderModule from "../../../core/modules/RenderModule";
-import WorldGameView from "../../../core/view/WorldGameView";
-import InteractableView from "../../../view/card/InteractableView";
 import BaseTower from "./BaseTower";
 import Game from "../../../../Game";
+import GameObject from "../../../core/gameObject/GameObject";
+import InteractableView from "../../../view/card/InteractableView";
+import RenderModule from "../../../core/modules/RenderModule";
 import StaticPhysicObject from "../../../entity/StaticPhysicObject";
-
+import Vector3 from "../../../core/gameObject/Vector3";
+import WorldGameView from "../../../core/view/WorldGameView";
+import signals from "signals";
 
 export default class BaseMap extends GameObject {
 
     constructor() {
         super()
+        
+        
 
         this.onMapUp = new signals.Signal();
         this.onAspectChange = new signals.Signal();

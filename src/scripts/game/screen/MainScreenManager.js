@@ -1,16 +1,10 @@
 import * as PIXI from 'pixi.js';
 import * as dat from 'dat.gui';
 
-import CharacterBuildScreen from './CharacterBuildScreen';
-import Game from '../../Game';
 import ArenaScreen from './ArenaScreen';
-import GameStaticData from '../data/GameStaticData';
-import MainMenu from './MainMenu';
-import PrizeManager from '../data/PrizeManager';
+import Game from '../../Game';
 import ScreenManager from '../../screenManager/ScreenManager';
 import ScreenTransition from './ScreenTransition';
-import ViewDatabase from '../data/ViewDatabase';
-import config from '../../config';
 
 export default class MainScreenManager extends ScreenManager {
     static Screens = {

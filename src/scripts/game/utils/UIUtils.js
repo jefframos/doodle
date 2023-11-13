@@ -1,7 +1,3 @@
-import BaseButton from "../components/ui/BaseButton";
-import BodyPartySlot from "../components/ui/BodyPartySlot";
-import ColorButton from "../components/ui/ColorButton";
-import ColorSlot from "../components/ui/ColorSlot";
 import InteractableView from "../view/card/InteractableView";
 import Pool from "../core/utils/Pool";
 import UIList from "../ui/uiElements/UIList";

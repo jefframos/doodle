@@ -1,4 +1,5 @@
-import PlayerViewStructure from './entity/PlayerViewStructure';
+// import PlayerViewStructure from './entity/PlayerViewStructure';
+
 import Signals from 'signals';
 
 export default class CookieManager {
