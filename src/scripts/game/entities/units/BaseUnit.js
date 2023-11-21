@@ -1,12 +1,14 @@
 import BaseMap from "./maps/BaseMap";
 import GameStaticData from "../../data/GameStaticData";
 import GameViewSpriteSheet from "../../components/GameViewSpriteSheet";
+import Health from "../../components/Health";
 import Layer from "../../core/Layer";
 import PhysicsEntity from "../../core/physics/PhysicsEntity";
 import RenderModule from "../../core/modules/RenderModule";
 import Shadow from "../../components/view/Shadow";
 import SpriteScaleBounceAppear from "../../components/SpriteScaleBounceAppear";
 import UIUtils from "../../utils/UIUtils";
+import UnityMover from "../components/UnityMover";
 import Vector3 from "../../core/gameObject/Vector3";
 import WorldGameView from "../../core/view/WorldGameView";
 
@@ -39,7 +41,6 @@ export default class BaseUnit extends PhysicsEntity {
         this.addChild(this.engine.poolGameObject(Shadow))
 
 
-        this.spriteSheet = this.addComponent(GameViewSpriteSheet);
 
         var pokeId = Math.ceil(Math.random() * 150)
         var path = pokeId
@@ -55,8 +56,8 @@ export default class BaseUnit extends PhysicsEntity {
 
 
         this.positionNormal = {
-            x:0,
-            y:0
+            x: 0,
+            y: 0
         }
         this.speed = parseInt(stats.speed) / 256
 
@@ -74,13 +75,16 @@ export default class BaseUnit extends PhysicsEntity {
             up: [path + '_3_0', path + '_3_1', path + '_3_2', path + '_3_3'],
         }
 
+
+        this.spriteSheet = this.addComponent(GameViewSpriteSheet);
+
         for (const key in animationFrames) {
             const element = animationFrames[key];
-            
+
             element.forEach(testFrame => {
-                
+
                 var test = PIXI.Texture.from(testFrame)
-                if(!test){
+                if (!test) {
                     console.log(testFrame)
                 }
             });
@@ -88,15 +92,11 @@ export default class BaseUnit extends PhysicsEntity {
             this.spriteSheet.addAnimation(key, element, 0.3, { x: 0.5, y: 1 })
         }
 
-        //console.log(forme)
-        //console.log(stats)
-
-        //this.addComponent(SpriteScaleBounceAppear)
-
-
-    }
-    start() {
-        super.start();
+        this.health = this.addComponent(Health)
+        this.health.reset();
+        // this.health.gotKilled.add(() => {
+        //     this.destroy()
+        // })
 
         this.worldMap = this.engine.findByType(BaseMap);
 
@@ -110,58 +110,26 @@ export default class BaseUnit extends PhysicsEntity {
             this.initializeMap();
         }
     }
-    initializeMap(){
+    start() {
+        super.start();       
+    }
+    initializeMap() {
         this.worldMap.onAspectChange.add(this.onAspectChange.bind(this))
-        this.targets = this.worldMap.getEnemieTowers();
+        this.mover = this.addComponent(UnityMover)
+        this.mover.speed = this.speed * 3;
 
     }
-    onAspectChange(aspect){
-        
-    }
-    
-    findClosestTower(point) {
-        let closest = 0;
-        let minDist = 999999;
-        for (var i = 0; i < this.targets.length; i++) {
-            let tower = this.targets[i];
+    onAspectChange(aspect) {
 
-            let dist = Vector3.distance(tower.transform.position, point)
-            if (dist < minDist) {
-                minDist = dist;
-                closest = i;
-            }
-        }
-
-        return this.targets[closest];
     }
 
     update(delta, unscaledDelta) {
         super.update(delta, unscaledDelta);
-
-        this.sin += delta;
-
-        // this.physics.velocity.z = Math.cos(this.sin) * this.speed
         this.spriteSheet.play(this.getCardinalDirection(this.physics.velocity.x, this.physics.velocity.z))
-        
-        if(this.worldMap){
-            
-            this.positionNormal.x = this.transform.x / this.worldMap.dimensions.width
-            this.positionNormal.y = this.transform.z / this.worldMap.dimensions.height
-            
-            const target = this.findClosestTower(this.transform.position);
-            
-            const angle = Vector3.atan2XZ(target.transform.position, this.transform.position)
-            
-            this.physics.velocity.x = Math.cos(angle) * this.speed
-            this.physics.velocity.z = Math.sin(angle) * this.speed
 
-            
-            if(Vector3.distance(target.transform.position, this.transform.position) < 30){
-                this.destroy();
-            }
+        if(this.health.currentHealth <= 0){
+            this.destroy()
         }
-        
-        //console.log(Math.sin(this.physics.velocity.x))
     }
 
     lateUpdate(delta) {
@@ -170,7 +138,7 @@ export default class BaseUnit extends PhysicsEntity {
 
     getCardinalDirection(velocityX, velocityY) {
         // Set a threshold for velocity to avoid jitter due to small values
-        const threshold = 0.1;
+        const threshold = 0.02;
 
         // Determine horizontal direction
         let horizontalDirection = 'right';
@@ -194,7 +162,7 @@ export default class BaseUnit extends PhysicsEntity {
     // Function to get 4-axis direction based on velocity
     getDirection(velocityX, velocityY) {
         // Set a threshold for velocity to avoid jitter due to small values
-        const threshold = 0.1;
+        const threshold = 0.02;
 
         // Check horizontal direction
         let horizontalDirection = '';

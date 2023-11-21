@@ -92,18 +92,6 @@ const assets = [
 	"url":"assets/json\\misc\\buff-debuff.json"
 	},
 	{
-	"id":"main-weapons",
-	"url":"assets/json\\weapons\\main-weapons.json"
-	},
-	{
-	"id":"weapon-in-game-visuals",
-	"url":"assets/json\\weapons\\weapon-in-game-visuals.json"
-	},
-	{
-	"id":"weapon-view-overriders",
-	"url":"assets/json\\weapons\\weapon-view-overriders.json"
-	},
-	{
 	"id":"general-vfx",
 	"url":"assets/json\\vfx\\general-vfx.json"
 	},
@@ -122,6 +110,18 @@ const assets = [
 	{
 	"id":"weapon-vfx",
 	"url":"assets/json\\vfx\\weapon-vfx.json"
+	},
+	{
+	"id":"main-weapons",
+	"url":"assets/json\\weapons\\main-weapons.json"
+	},
+	{
+	"id":"weapon-in-game-visuals",
+	"url":"assets/json\\weapons\\weapon-in-game-visuals.json"
+	},
+	{
+	"id":"weapon-view-overriders",
+	"url":"assets/json\\weapons\\weapon-view-overriders.json"
 	}
 ];
 

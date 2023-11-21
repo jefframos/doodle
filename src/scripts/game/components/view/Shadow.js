@@ -7,7 +7,7 @@ export default class Shadow extends GameObject {
         super();
         this.gameView = new GameView(this);
         this.gameView.layer = RenderModule.RenderLayers.Shadow;
-        this.gameView.view = new PIXI.Sprite.from('shadow2');
+        this.gameView.view = new PIXI.Sprite();
         this.gameView.view.anchor.set(0.5);
     }
     getNewParent(parent) {

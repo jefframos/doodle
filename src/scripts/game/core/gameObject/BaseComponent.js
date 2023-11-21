@@ -5,6 +5,7 @@ export default class BaseComponent {
         this.enabled
         this.buildFrame = 0;
         this.gameObject = null;
+        this.engine = null;
         this.shouldBeRemoved = false;
     }
     reset() {

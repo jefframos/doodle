@@ -58,6 +58,7 @@ export default class GameObject extends BaseComponent {
     addComponent(constructor) {
         let element = Pool.instance.getElement(constructor)
         this.components.push(element);
+        element.engine = this.engine;
         element.gameObject = this;
         element.enable();
         return element;
@@ -125,7 +126,7 @@ export default class GameObject extends BaseComponent {
         super.update(delta);
         for (let i = this.components.length - 1; i >= 0; i--) {
             const element = this.components[i];
-            if(element.shouldBeRemoved){
+            if(!element || element.shouldBeRemoved){
                 this.components.splice(i,1);
                 continue;
             }

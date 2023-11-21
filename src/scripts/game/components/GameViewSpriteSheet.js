@@ -52,8 +52,6 @@ export default class GameViewSpriteSheet extends BaseComponent {
             this.view = this.gameObject.gameView.view;
         }
         this.spriteSheet.addFrames(id, frames, speed, anchor);
-        //this.view.texture = PIXI.Texture.from(this.spriteSheet.currentFrame)
-
     }
     play(id){
         this.spriteSheet.play(id)
